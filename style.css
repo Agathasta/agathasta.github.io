@@ -2,6 +2,7 @@
   --main-blue: #293f50;
   --green: rgb(73, 100, 91);
   --white: rgb(227, 228, 227);
+  --dark-blue: rgba(2, 28, 43, 0.8)
 }
 * {
   box-sizing: border-box;
@@ -87,7 +88,7 @@ h3 {
 .typewriter-text {
   color: var(--white);
   overflow: hidden;
-  border-right: 0.05em solid rgba(2, 28, 43, 0.8);
+  border-right: 0.05em solid var(--dark-blue);
   white-space: nowrap;
   margin: 0 auto;
   -webkit-animation: typing 3s steps(20, end), blink-caret 1s step-end infinite;
@@ -159,7 +160,7 @@ h3 {
   position: relative;
   display: block;
   padding: 40px;
-  box-shadow: 10px -10px 0 0 black;
+  box-shadow: 10px -10px 0 0 var(--dark-blue);
   transform: rotate(135deg);
 }
 
@@ -236,7 +237,8 @@ h3 {
   transform: scale(1.05);
 }
 #profile-section h2 {
-  border-bottom: 3px solid black;
+  color: var(--dark-blue);
+  border-bottom: 3px solid var(--dark-blue);
 }
 #profile-section a {
   font-size: 3rem;
