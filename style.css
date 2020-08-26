@@ -220,7 +220,7 @@ h3 {
 #profile-section {
   padding-top: 6.4rem;
   height: 93vh;
-  background: rgba(1, 12, 19, 0.8);
+  background: var(--green);
 }
 .contact-links {
   height: 50vh;
@@ -236,8 +236,8 @@ h3 {
   transform: scale(1.05);
 }
 #profile-section h2 {
-  color: rgba(19, 112, 165, 0.8);
-  border-bottom: 3px solid rgba(19, 112, 165, 0.8);
+  color: var(--main-blue);
+  border-bottom: 3px solid var(--main-blue);
 }
 #profile-section a {
   font-size: 3rem;
