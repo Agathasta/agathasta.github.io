@@ -159,7 +159,7 @@ h3 {
   position: relative;
   display: block;
   padding: 40px;
-  box-shadow: 10px -10px 0 0 var(--white);
+  box-shadow: 10px -10px 0 0 black;
   transform: rotate(135deg);
 }
 
@@ -236,8 +236,7 @@ h3 {
   transform: scale(1.05);
 }
 #profile-section h2 {
-  color: var(--main-blue);
-  border-bottom: 3px solid var(--main-blue);
+  border-bottom: 3px solid black;
 }
 #profile-section a {
   font-size: 3rem;
