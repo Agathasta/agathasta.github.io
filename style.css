@@ -1,319 +1,316 @@
 :root {
-    --main-blue: rgba(13, 95, 143, 0.8);
+  --main-blue: rgba(11, 83, 124, 0.8);
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 10px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 200;
-    scroll-behavior: smooth;
+  font-size: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-size: 2rem;
+  font-size: 1.1rem;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
-    font-size: 4rem;
-    color: var(--main-blue);
-    text-align: center;
-    line-height: 8rem;
+  font-size: 3rem;
+  color: var(--main-blue);
+  text-align: center;
+  line-height: 8rem;
 }
 h3 {
-    box-shadow: 0 2px 3px -3px rgba(0, 0, 0, 0.5);
-    margin: 0 4rem;
+  box-shadow: 0 2px 3px -3px rgba(0, 0, 0, 0.5);
+  margin: 0 4rem;
 }
 
 /* navbar */
 #navbar {
-    position: fixed;
-    top: 0;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100vw;
-    display: flex;
-    justify-content: right;
-    z-index: 99;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  display: flex;
+  justify-content: right;
+  z-index: 99;
 }
 .menu-link {
-    padding: 2rem;
+  padding: 2rem;
 }
 .menu-link:hover {
-    color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 .anchor:before {
-    display: block;
-    content: " ";
-    margin-top: -6.4rem;
-    height: 6.4rem;
-    visibility: hidden;
-    pointer-events: none;
+  display: block;
+  content: " ";
+  margin-top: -6.4rem;
+  height: 6.4rem;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* welcome */
 #welcome-section {
-    height: 100vh;
-    background: var(--main-blue);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  height: 100vh;
+  background: var(--main-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 span,
 .grey {
-    color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 .typewriter {
-    display: inline-block;
-    font-family: "Source Code Pro", monospace;
-    font-size: 8rem;
-    font-weight: 200;
+  display: inline-block;
+  font-family: "Source Code Pro", monospace;
+  font-size: 8rem;
 }
 .typewriter-text {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.09em solid rgba(2, 28, 43, 0.8); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    -webkit-animation: typing 3s steps(20, end),
-        blink-caret 1s step-end infinite;
-    animation: typing 3s steps(20, end), blink-caret 1s step-end infinite;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.09em solid rgba(2, 28, 43, 0.8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  -webkit-animation: typing 3s steps(20, end), blink-caret 1s step-end infinite;
+  animation: typing 3s steps(20, end), blink-caret 1s step-end infinite;
 }
 /* The typing effect */
 @-webkit-keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 /* The typewriter cursor effect */
 @-webkit-keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: rgba(2, 28, 43, 0.8);
-    }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(2, 28, 43, 0.8);
+  }
 }
 @keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: rgba(2, 28, 43, 0.8);
-    }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(2, 28, 43, 0.8);
+  }
 }
 
 .delay-1 {
-    -webkit-animation: appear 3.5s steps(1, end);
-    animation: appear 3.5s steps(1, end);
+  -webkit-animation: appear 3.5s steps(1, end);
+  animation: appear 3.5s steps(1, end);
 }
 .delay-2 {
-    -webkit-animation: appear 4.5s steps(1, end);
-    animation: appear 4.5s steps(1, end);
+  -webkit-animation: appear 4.5s steps(1, end);
+  animation: appear 4.5s steps(1, end);
 }
 @-webkit-keyframes appear {
-    0% {
-        color: transparent;
-    }
-    100% {
-        color: black;
-    }
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
 }
 @keyframes appear {
-    0% {
-        color: transparent;
-    }
-    100% {
-        color: black;
-    }
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
 }
 
 #arrow {
-    position: relative;
-    display: block;
-    padding: 40px;
-    box-shadow: 15px -15px 0 0 white;
-    transform: rotate(135deg);
+  position: relative;
+  display: block;
+  padding: 40px;
+  box-shadow: 15px -15px 0 0 white;
+  transform: rotate(135deg);
 }
 
 /* projects */
 #projects {
-    padding-top: 10rem;
-    min-height: 100vh;
+  padding-top: 10rem;
+  min-height: 100vh;
 }
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    max-width: 100%;
-    margin: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  max-width: 100%;
+  margin: 4rem;
 }
 .project-tile {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
-    background: var(--main-blue);
-    position: relative;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  background: var(--main-blue);
+  position: relative;
 }
 
 .hover-tile {
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    padding: 10rem;
-    font-size: 3rem;
-    line-height: 5rem;
-    height: 100%;
-    width: 100%;
-    transition: opacity 0.5s linear;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 10rem;
+  font-size: 3rem;
+  line-height: 5rem;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.5s linear;
 }
 .project-tile:hover .hover-tile {
-    opacity: 1;
+  opacity: 1;
 }
 
 .invisible {
-    /* for the grid to work in auto-fit */
-    visibility: hidden;
+  /* for the grid to work in auto-fit */
+  visibility: hidden;
 }
 .project-tile > img {
-    height: auto;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .project-title {
-    font-size: 2rem;
-    padding: 1.5rem 2rem 2rem 2rem;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem 2rem 2rem;
 }
 
 /* profile */
 #profile-section {
-    padding-top: 6.4rem;
-    height: 93vh;
-    background: rgba(1, 12, 19, 0.8);
+  padding-top: 6.4rem;
+  height: 93vh;
+  background: rgba(1, 12, 19, 0.8);
 }
 .contact-links {
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .contact-detail {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .contact-detail:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 #profile-section h2 {
-    color: rgba(19, 112, 165, 0.8);
-    border-bottom: 3px solid rgba(19, 112, 165, 0.8);
+  color: rgba(19, 112, 165, 0.8);
+  border-bottom: 3px solid rgba(19, 112, 165, 0.8);
 }
 #profile-section a {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 /* footer */
 footer {
-    background: rgba(167, 166, 166, 0.8);
-    margin: 0;
+  background: rgba(167, 166, 166, 0.8);
+  margin: 0;
 }
 #footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 30px;
-    font-family: monospace;
-    font-weight: 400;
-    font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 30px;
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 600px) {
-    body {
-        font-size: 1.5rem;
-    }
-    .menu-link {
-        padding: 1rem;
-    }
-    #arrow {
-        padding: 20px;
-        box-shadow: 7px -7px 0 0 white;
-    }
-    h1,
-    h2,
-    .typewriter,
-    #profile-section a {
-        font-size: 3rem;
-    }
-    h3 {
-        text-align: center;
-    }
-    #footer {
-        font-size: 1rem;
-        padding: 2rem;
-    }
-    .contact-links {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+  body {
+    font-size: 1.1rem;
+  }
+  .menu-link {
+    padding: 1rem;
+  }
+  #arrow {
+    padding: 20px;
+    box-shadow: 7px -7px 0 0 white;
+  }
+  h1,
+  h2,
+  .typewriter,
+  #profile-section a {
+    font-size: 3rem;
+  }
+  h3 {
+    text-align: center;
+  }
+  #footer {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 @media (min-width: 600px) and (max-width: 992px) {
-    body {
-        font-size: 2rem;
-    }
-    .menu-link {
-        padding: 1.5rem;
-    }
-    .typewriter {
-        font-size: 5rem;
-    }
-    #arrow {
-        padding: 30px;
-        box-shadow: 10px -10px 0 0 white;
-    }
-    h1,
-    h2,
-    #profile-section a {
-        font-size: 3rem;
-    }
-    h3 {
-        text-align: center;
-    }
-    #footer {
-        font-size: 1.3rem;
-        padding: 2rem;
-    }
-    .contact-links {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+  body {
+    font-size: 1.3rem;
+  }
+  .menu-link {
+    padding: 1.5rem;
+  }
+  .typewriter {
+    font-size: 5rem;
+  }
+  #arrow {
+    padding: 30px;
+    box-shadow: 10px -10px 0 0 white;
+  }
+  h1,
+  h2,
+  #profile-section a {
+    font-size: 3rem;
+  }
+  h3 {
+    text-align: center;
+  }
+  #footer {
+    font-size: 1.3rem;
+    padding: 2rem;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
