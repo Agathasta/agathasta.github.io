@@ -273,7 +273,7 @@ footer {
   }
   #arrow {
     padding: 20px;
-    box-shadow: 7px -7px 0 0 var(--white);
+    box-shadow: 7px -7px 0 0 var(--dark-blue);
   }
   h1,
   h2,
@@ -309,7 +309,7 @@ footer {
   }
   #arrow {
     padding: 30px;
-    box-shadow: 10px -10px 0 0 var(--white);
+    box-shadow: 10px -10px 0 0 var(--dark-blue);
   }
   h1,
   h2,
