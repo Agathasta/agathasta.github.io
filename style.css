@@ -299,7 +299,7 @@ footer {
 }
 @media (min-width: 600px) and (max-width: 992px) {
   body {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .menu-link {
     padding: 1.5rem;
