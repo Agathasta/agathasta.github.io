@@ -2,7 +2,7 @@
   --main-blue: #293f50;
   --green: rgb(73, 100, 91);
   --white: rgb(227, 228, 227);
-  --dark-blue: rgba(2, 28, 43, 0.8)
+  --dark-blue: rgba(2, 28, 43, 0.8);
 }
 * {
   box-sizing: border-box;
@@ -137,7 +137,7 @@ h3 {
   animation: appear 3.5s steps(1, end);
 }
 .delay-2 {
-  color: var(--green);
+  color: var(--white);
   -webkit-animation: appear 4.5s steps(1, end);
   animation: appear 4.5s steps(1, end);
 }
