@@ -55,7 +55,7 @@ h3 {
   padding: 2rem;
 }
 .menu-link:hover {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--green);
 }
 .anchor:before {
   display: block;
@@ -86,7 +86,7 @@ h3 {
   font-size: 8rem;
 }
 .typewriter-text {
-  color: var(--white);
+  color: black;
   overflow: hidden;
   border-right: 0.05em solid var(--dark-blue);
   white-space: nowrap;
@@ -132,10 +132,12 @@ h3 {
 }
 
 .delay-1 {
+  color: var(--white);
   -webkit-animation: appear 3.5s steps(1, end);
   animation: appear 3.5s steps(1, end);
 }
 .delay-2 {
+  color: var(--green);
   -webkit-animation: appear 4.5s steps(1, end);
   animation: appear 4.5s steps(1, end);
 }
@@ -223,6 +225,10 @@ h3 {
   height: 93vh;
   background: var(--green);
 }
+#profile-section h2 {
+  font-weight: 400;
+}
+
 .contact-links {
   height: 50vh;
   display: flex;
