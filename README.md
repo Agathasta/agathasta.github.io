@@ -1,7 +1,5 @@
 # [Agathasta's Portfolio](agathasta.github.io)
 
-My personal road to learning code
-
 In spring 2020, I completely updated my WordPress Business Webpage, design and content - [smooth-tours.com](https://smooth-tours.com)
 
 I got curious, and in summer 2020 I started teaching myself how to code. A month later, I managed to start getting some structure, and I settled on these open source free resources. A HUGE THANKS UPFRONT, THEY AND THEIR COMMUNITIES ARE BEING AMAZING!
