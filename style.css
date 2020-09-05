@@ -279,3 +279,22 @@ footer {
     justify-content: space-evenly;
   }
 }
+@media (min-width: 600px) and (max-width: 900px) {
+
+  .typewriter {
+    font-size: 400%;
+  }
+  h3 {
+    text-align: center;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
