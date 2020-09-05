@@ -72,6 +72,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 4em;
 }
 
 .green {
@@ -148,7 +149,7 @@ h3 {
 #arrow {
   position: relative;
   display: block;
-  padding: 30px;
+  padding: 2em;
   box-shadow: 10px -10px 0 0 var(--dark-blue);
   transform: rotate(135deg);
 }
@@ -244,9 +245,15 @@ footer {
   font-family: monospace;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   html {
-    font-size: 90%;
+    font-size: 80%;
+  }
+  #navbar {
+    justify-content: space-evenly;
+  }
+  .typewriter {
+    font-size: 400%;
   }
   .disappear {
     display: none;
@@ -258,9 +265,17 @@ footer {
   h3 {
     text-align: center;
   }
+  .project-grid {
+    margin: 4rem 1rem;
+  }
   .contact-links {
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+  }
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-evenly;
   }
 }
