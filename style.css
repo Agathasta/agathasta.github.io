@@ -49,7 +49,8 @@ h3 {
   z-index: 99;
 }
 .menu-link {
-  padding: 2em;
+  padding: 1.5em 2em;
+  font-size: 120%;
 }
 .menu-link:hover {
   color: var(--green);
@@ -243,7 +244,10 @@ footer {
   font-family: monospace;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
   .disappear {
     display: none;
   }
