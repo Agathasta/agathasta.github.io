@@ -1,6 +1,6 @@
 :root {
-  --main-blue: #293f50;
-  --green: rgb(73, 100, 91);
+  --main-blue: #30495c;
+  --green: rgb(85, 116, 105);
   --white: rgb(193, 194, 193);
   --dark-blue: rgba(2, 28, 43, 0.8);
 }
@@ -12,10 +12,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
-}
-
-body {
+  font-size: 100%;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -31,13 +28,13 @@ h2 {
   font-size: 1.7em;
   color: var(--main-blue);
   text-align: center;
-  line-height: 8rem;
+  padding-top: 4rem;
 }
 h3 {
   font-size: 1.4em;
   box-shadow: 0 2px 3px -3px rgba(0, 0, 0, 0.5);
   margin: 0 4rem;
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 /* navbar */
@@ -52,7 +49,7 @@ h3 {
   z-index: 99;
 }
 .menu-link {
-  padding: 2rem;
+  padding: 2em;
 }
 .menu-link:hover {
   color: var(--green);
@@ -82,7 +79,7 @@ h3 {
 
 .typewriter {
   font-family: "Source Code Pro", monospace;
-  font-size: 6em;
+  font-size: 500%;
 }
 .typewriter-text {
   color: black;
@@ -95,45 +92,31 @@ h3 {
 }
 /* The typing effect */
 @-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  from {width: 0;}
+  to {width: 100%;}
 }
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  from {width: 0;}
+  to {width: 100%;}
 }
 /* The typewriter cursor effect */
 @-webkit-keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgba(2, 28, 43, 0.8);
-  }
+  from, to {border-color: transparent;}
+  50% {border-color: rgba(2, 28, 43, 0.8);}
 }
 @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgba(2, 28, 43, 0.8);
-  }
+  from, to {border-color: transparent;}
+  50% {border-color: rgba(2, 28, 43, 0.8);}
+}
+
+.subtitle {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 #delay-1 {
   color: var(--white);
   overflow: hidden;
-  white-space: nowrap;
   margin: 0 auto;
   -webkit-animation: appear 3.5s steps(1, end);
   animation: appear 3.5s steps(1, end);
@@ -195,7 +178,7 @@ h3 {
   left: 0;
   text-align: center;
   padding: 2em;
-  font-size: 2em;
+  font-size: 200%;
   line-height: 2em;
   height: 100%;
   width: 100%;
@@ -245,7 +228,7 @@ h3 {
   font-weight: 400;
 }
 #profile-section a {
-  font-size: 1.728em;;
+  font-size: 2em;;
 }
 
 /* footer */
@@ -258,27 +241,19 @@ footer {
   justify-content: space-between;
   padding: 2em;
   font-family: monospace;
-  font-weight: 400;
 }
 
 @media (max-width: 600px) {
- 
-  .html {
-    font-size: 70%
-  }
-  .menu-link {
-    padding: 1rem;
-  }
-  #arrow {
-    padding: 20px;
-    box-shadow: 7px -7px 0 0 var(--dark-blue);
+  html {
+    font-size: 85%;
   }
 
-  #profile-section a {
-    font-size: 1.728em;
+  .disappear {
+    display: none;
   }
-  .typewriter {
-    font-size: 3em;
+  .subtitle {
+    flex-direction: column;
+    line-height: 4em;
   }
 
   h3 {
@@ -292,23 +267,14 @@ footer {
   }
 }
 @media (min-width: 600px) and (max-width: 992px) {
-  .html {
-    font-size: 85%
+  html {
+    font-size: 95%;
+  }
+  .subtitle {
+    flex-direction: column;
+    line-height: 4em;
   }
 
-  .menu-link {
-    padding: 1.5rem;
-  }
-  .typewriter {
-    font-size: 3em;
-  }
-  #arrow {
-    padding: 30px;
-    box-shadow: 10px -10px 0 0 var(--dark-blue);
-  }
-  #profile-section a {
-    font-size: 1.728em;;
-  }
   h3 {
     text-align: center;
   }
