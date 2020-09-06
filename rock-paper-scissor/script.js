@@ -8,6 +8,9 @@ function start() {
     main.appendChild(roundText);
     userScoreText.textContent = 0;
     computerScoreText.textContent = 0;
+    userScore = 0;
+    computerScore = 0;
+    winText.textContent = "";
 }
 
 // Define computer choice, user choice and start playing:
@@ -42,7 +45,7 @@ function playFiveRounds() {
         playRound();
         computerScore < userScore
             ? winText.textContent = "YOU WIN!!!!!"
-            : winText.textContent = "you loose, oh well";
+            : winText.textContent = "YOU LOOSE... OH WELL";
         main.appendChild(winText);
         roundText.textContent = "START OVER";
         main.appendChild(roundText);
@@ -57,6 +60,7 @@ function playRound() {
 
     if (computerChoice === userChoice) {
         winText.textContent = "You're tied, try again";
+        winText.setAttribute("style", "color: black")
     } else if (
         result === "Rock Paper" ||
         result === "Paper Scissors" ||
@@ -65,11 +69,13 @@ function playRound() {
         roundText.textContent = "Round " + rounds++;
         winText.textContent = `You win, ${userChoice} beats ${computerChoice}`;
         userScore++;
+        winText.setAttribute("style", "color: #4F5D2F")
         userScoreText.textContent = userScore;
     } else {
         roundText.textContent = "Round " + rounds++;
         winText.textContent = `You loose, ${computerChoice} beats ${userChoice}`;
         computerScore++;
+        winText.setAttribute("style", "color: #B53C17")
         computerScoreText.textContent = computerScore;
     }
 }
