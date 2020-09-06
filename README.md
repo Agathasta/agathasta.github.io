@@ -14,4 +14,5 @@ I got curious, and in summer 2020 I started teaching myself how to code. A month
 
 - [The Odin Project](https://www.theodinproject.com) - the Web Development 101 curriculum features several Javascript practices:
 
-  - [Exercises with functions, loops and conditionals](https://agathasta.github.io/JS-practice)]
+  - [Exercises with functions, loops and conditionals](https://agathasta.github.io/JS-practice)
+  - [Rock, Paper, Scissors](https://agathasta.github.io/rock-paper-scissor)
