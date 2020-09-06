@@ -12,4 +12,6 @@ I got curious, and in summer 2020 I started teaching myself how to code. A month
   - [A technical documentation page](https://codepen.io/agathasta/full/jOqrRWW)
   - [A personal portfolio](https://codepen.io/agathasta/full/ExKZNOd)
 
-- [The Odin Project](https://www.theodinproject.com) - the Web Development 101 curriculum features several Javascript basic projects:
+- [The Odin Project](https://www.theodinproject.com) - the Web Development 101 curriculum features several Javascript practices:
+
+  - [Exercises with functions, loops and conditionals](https://agathasta.github.io/JS-practice)]
