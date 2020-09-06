@@ -1,0 +1,13 @@
+html {
+    font-size: 100%;
+
+}
+.icon-bar {
+    display: flex;
+}
+.icon {
+    font-size: 10em;
+    background: #B53C17;
+    color: white;
+    border: none;
+}

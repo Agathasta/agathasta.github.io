@@ -5,6 +5,7 @@
   <title>Rock, Paper, Scissors</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/694317dcf2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -12,12 +13,18 @@
     <h1>Rock, Paper, Scissors</h1>
   </header>
   <main>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
-    <p id="computer-choice"></p>
-    <p id="user-choice"></p>
+    <button id="round">Start</button>
+    <div class="icon-bar">
+      <button class="icon" id="rock"><i class="far fa-hand-rock"></i></button>
+      <button class="icon" id="paper"><i class="far fa-hand-paper"></i></button>
+      <button class="icon" id="scissors"><i class="far fa-hand-scissors"></i></button>
+    </div>
+    <p class="computer" id="computer-choice"></p>
+    <p class="user" id="user-choice"></p>
     <p id="winner"></p>
+    <p class="computer" id="computer-score"></p>
+    <p class="user" id="user-score"></p>
+
 
   </main>
 

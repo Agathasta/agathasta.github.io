@@ -1,119 +1,75 @@
 const main = document.querySelector("main");
 
-// Declare a function computerPlay that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
-const choices = ["Rock", "Paper", "Scissors"];
-function computerPlay() {
-    let computerChoice = document.querySelector("#computer-choice");
-    computerChoice.textContent = "Computer chooses " + choices[Math.floor(Math.random() * 3)];
-    main.appendChild(computerChoice);
+let roundText = document.querySelector("#round");
+roundText.addEventListener("click", start);
+
+function start() {
+    roundText.textContent = "Round 1";
+    main.appendChild(roundText);
+    userScoreText.textContent = 0;
+    computerScoreText.textContent = 0;
 }
-const btns = document.querySelectorAll("button");
+
+// Define computer choice, user choice and start playing:
+const btns = document.querySelectorAll(".icon");
 btns.forEach(button => button.addEventListener("click", function () {
     computerPlay();
     let option = button.id.charAt(0).toUpperCase() + button.id.slice(1);
     let userChoice = document.querySelector("#user-choice");
-    userChoice.textContent = "User chooses " + option;
-    main.appendChild(userChoice);
+    userChoice.textContent = "You choose " + option;
     playFiveRounds();
-
 }));
+
+// Declare a function computerPlay that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
+function computerPlay() {
+    const choices = ["Rock", "Paper", "Scissors"];
+    let computerChoice = document.querySelector("#computer-choice");
+    computerChoice.textContent = "Computer chooses " + choices[Math.floor(Math.random() * 3)];
+}
+// Stop the game after 5 rounds
+let rounds = 2;
 let userScore = 0;
+let userScoreText = document.querySelector("#user-score");
 let computerScore = 0;
+let computerScoreText = document.querySelector("#computer-score");
+let winText = document.querySelector("#winner");
 
 function playFiveRounds() {
-    let rounds = 1;
-    for (let i = 1; i <= 5; i++) {
-        console.log("Round " + rounds++);
+    if (rounds < 6) {
         playRound();
     }
-    computerScore < userScore
-        ? alert("YOU WIN!!!!!")
-        : alert("you loose, oh well");
+    else if (rounds >= 6) {
+        playRound();
+        computerScore < userScore
+            ? winText.textContent = "YOU WIN!!!!!"
+            : winText.textContent = "you loose, oh well";
+        main.appendChild(winText);
+        roundText.textContent = "START OVER";
+        main.appendChild(roundText);
+        rounds = 2;
+    }
 }
-
+// Play one round. Compare both choices, declare if winner or loser and why. Actualize user score
 function playRound() {
     let userChoice = document.querySelector("#user-choice").textContent.split(" ").pop();
     let computerChoice = document.querySelector("#computer-choice").textContent.split(" ").pop();
-
-    // Compare both choices, declare if winner or loser and why. Actualize user score
     let result = computerChoice + " " + userChoice;
 
     if (computerChoice === userChoice) {
-        alert("You're tied, try again");
+        winText.textContent = "You're tied, try again";
     } else if (
         result === "Rock Paper" ||
         result === "Paper Scissors" ||
         result === "Scissors Rock"
     ) {
-        alert(`You win, ${userChoice} beats ${computerChoice}`);
+        roundText.textContent = "Round " + rounds++;
+        winText.textContent = `You win, ${userChoice} beats ${computerChoice}`;
         userScore++;
-        console.log("User score: " + userScore);
+        userScoreText.textContent = userScore;
     } else {
-        alert(`You loose, ${computerChoice} beats ${userChoice}`);
+        roundText.textContent = "Round " + rounds++;
+        winText.textContent = `You loose, ${computerChoice} beats ${userChoice}`;
         computerScore++;
-        console.log("Computer score: " + computerScore);
+        computerScoreText.textContent = computerScore;
     }
 }
-
-
-
-/* OLD SCRIPT
-const choices = ["Rock", "Paper", "Scissors"];
-// Declare a function computerPlay that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
-function computerPlay() {
-    let computerChoice = choices[Math.floor(Math.random() * 3)];
-    return computerChoice;
-}
-
-// Prompt an input from the user. Make it case insensitive
-function userPlay() {
-    let userChoice = prompt("Choose one");
-    userChoice = userChoice.charAt(0).toUpperCase() + userChoice.slice(1).toLowerCase();
-
-    while (!choices.includes(userChoice)) {
-        alert("Wrong item!");
-        userPlay();
-    }
-    return userChoice;
-}
-// Declare a function with 2 parameters: computer + user choice
-function playRound() {
-    let userChoice = userPlay();
-    let computerChoice = computerPlay();
-
-    // Compare both choices, declare if winner or loser and why. Actualize user score
-    let result = computerChoice + " " + userChoice;
-    console.log(result);
-    if (computerChoice === userChoice) {
-        alert("You're tied, try again");
-        playRound();
-    } else if (
-        result === "Rock Paper" ||
-        result === "Paper Scissors" ||
-        result === "Scissors Rock"
-    ) {
-        alert(`You win, ${userChoice} beats ${computerChoice}`);
-        userScore++;
-        console.log("User score: " + userScore);
-    } else {
-        alert(`You loose, ${computerChoice} beats ${userChoice}`);
-        computerScore++;
-        console.log("Computer score: " + computerScore);
-    }
-}
-
-// Play 5 rounds, keep track and declare a winner
-let userScore = 0;
-let computerScore = 0;
-function playFiveRounds() {
-    let rounds = 1;
-    for (let i = 1; i <= 5; i++) {
-        console.log("Round " + rounds++);
-        playRound();
-    }
-    computerScore < userScore
-        ? alert("YOU WIN!!!!!")
-        : alert("you loose, oh well");
-}
-playFiveRounds();
-*/
