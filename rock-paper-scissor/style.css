@@ -16,15 +16,16 @@ main {
         "computer-score user-score"
         "winner winner";
 }
-#round {
+
+#button {
     grid-area: button;
     border: none;
     background: transparent;
     font-size: 1em;
-    cursor:pointer;
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
-.icon-bar {
+#icon-bar {
     grid-area: icon;
     display: flex;
     justify-content: center;
@@ -36,19 +37,19 @@ main {
     background: transparent;
     border: none;
     margin: 20px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-#computer-choice {
+#choice-computer {
     grid-area: computer-choice;
 }
-#user-choice {
+#choice-user {
     grid-area: user-choice;
 }
-#computer-score {
+#score-computer {
     grid-area: computer-score;
 }
-#user-score {
+#score-user {
     grid-area: user-score;
 }
 #winner {
