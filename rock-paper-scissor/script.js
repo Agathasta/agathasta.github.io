@@ -18,6 +18,9 @@ function startGame() {
     scoreUserText.textContent = 0;
     scoreComputerText.textContent = 0;
     winner.textContent = "";
+    scoreUser = 0;
+    scoreComputer = 0;
+    roundCount = 1;
 }
 
 // choice computer
@@ -38,9 +41,13 @@ btns.forEach(button => button.addEventListener("click", function () {
 function playRound() {
     console.log(roundCount);
     if (roundCount > 5) {
-        scoreComputer < scoreUser
-            ? winner.textContent = "YOU WIN!!!!!"
-            : winner.textContent = "YOU LOOSE... OH WELL";
+        if (scoreComputer < scoreUser) {
+            winner.textContent = "YOU WIN!!!!!";
+            winner.setAttribute("style", "color: #4F5D2F");
+        } else {
+            winner.textContent = "YOU LOOSE... OH WELL";
+            winner.setAttribute("style", "color: #B53C17");
+        }
         btnStart.textContent = "START OVER";
         //icons.setAttribute("style", "display: none");
     } else {
@@ -53,8 +60,7 @@ function playRound() {
         } else if (
             result === "Rock Paper" ||
             result === "Paper Scissors" ||
-            result === "Scissors Rock"
-        ) {
+            result === "Scissors Rock") {
             roundCount++;
             roundCount <= 5 ? btnStart.textContent = "Round " + roundCount : "";
             winner.textContent = `You win, ${user} beats ${computer}`;
