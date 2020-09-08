@@ -1,25 +1,32 @@
 const container = document.querySelector("#container");
-
-function makeGrid(rows) {
-    container.innerHTML = "";
-    container.style.setProperty("--rows", rows);
-    container.style.setProperty("--cols", rows);
-
-    for (i = 0; i < (rows * rows); i++) {
-        let cell = document.createElement("div");
-        cell.classList.add("cell");
-        cell.addEventListener("mouseenter", () => {
-            cell.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
-        })
-        container.appendChild(cell);
-    };
-};
-let rows = prompt("How many rows? Enter a number from 2 - 80");
-makeGrid(rows);
+const rows = document.querySelector("#rows");
+let paint = false;
 
 const btnReset = document.querySelector("#reset");
-btnReset.addEventListener("click", function () {
-    rows = prompt("How many rows? Enter a number from 2 - 80");
-    makeGrid(rows)
+btnReset.addEventListener("click", () => {
+    container.innerHTML = "";
 });
 
+container.addEventListener("click", makeGrid);
+
+function makeGrid() {
+    paint = !paint;
+
+    const numberOfRows = parseInt(rows.value);
+    container.style.setProperty("--rows", numberOfRows);
+    container.style.setProperty("--cols", numberOfRows);
+
+    for (i = 0; i < (numberOfRows * numberOfRows); i++) {
+        let cell = document.createElement("div");
+        cell.classList.add("cell");
+
+        cell.addEventListener("mouseenter", () => {
+            if (paint) {
+                cell.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
+            } else {
+                cell.style.backgroundColor = "none";
+            }
+        })
+        container.appendChild(cell);
+    }
+}
