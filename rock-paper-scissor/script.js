@@ -1,6 +1,5 @@
 let scoreUser = 0;
 let scoreComputer = 0;
-let roundCount = 1;
 
 const btnStart = document.querySelector("#button");
 const choiceUser = document.querySelector("#choice-user");
@@ -12,7 +11,7 @@ const winner = document.querySelector("#winner");
 // set everything to 0
 btnStart.addEventListener("click", startGame);
 function startGame() {
-    btnStart.textContent = "Round 1";
+    btnStart.textContent = "First to reach 5 points wins!";
     choiceUser.textContent = "";
     choiceComputer.textContent = "";
     scoreUserText.textContent = 0;
@@ -20,7 +19,6 @@ function startGame() {
     winner.textContent = "";
     scoreUser = 0;
     scoreComputer = 0;
-    roundCount = 1;
 }
 
 // choice computer
@@ -39,8 +37,7 @@ btns.forEach(button => button.addEventListener("click", function () {
 
 // play round
 function playRound() {
-    console.log(roundCount);
-    if (roundCount > 5) {
+    if (scoreUser == 5 || scoreComputer == 5) {
         if (scoreComputer < scoreUser) {
             winner.textContent = "YOU WIN!!!!!";
             winner.setAttribute("style", "color: #4F5D2F");
@@ -61,15 +58,11 @@ function playRound() {
             result === "Rock Paper" ||
             result === "Paper Scissors" ||
             result === "Scissors Rock") {
-            roundCount++;
-            roundCount <= 5 ? btnStart.textContent = "Round " + roundCount : "";
             winner.textContent = `You win, ${user} beats ${computer}`;
             winner.setAttribute("style", "color: #4F5D2F");
             scoreUser++;
             scoreUserText.textContent = scoreUser;
         } else {
-            roundCount++;
-            roundCount <= 5 ? btnStart.textContent = "Round " + roundCount : "";
             winner.textContent = `You loose, ${computer} beats ${user}`;
             winner.setAttribute("style", "color: #B53C17");
             scoreComputer++;
