@@ -1,0 +1,21 @@
+:root {
+    --rows: 1;
+    --cols: 1;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 40vw;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: repeat(var(--rows), 1fr);
+    grid-template-columns: repeat(var(--cols), 1fr);
+    border: 1px solid black;
+}
+
+.cell {
+    text-align: center;
+
+}
