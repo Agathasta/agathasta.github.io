@@ -2,20 +2,27 @@
     --rows: 1;
     --cols: 1;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+}
+
+main {
+    background: rgba(223, 223, 223, 0.7);
+    padding: 2em;
+    width: 80vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Grandstander', cursive;
+}
+button {
+    font-family: 'Poppins', sans-serif;
 }
 
 #container {
-    width: 60vw;
+    width: 70vw;
     height: 60vh;
     display: grid;
     grid-template-rows: repeat(var(--rows), 1fr);
     grid-template-columns: repeat(var(--cols), 1fr);
-    border: 1px solid black;
-}
-
-.cell {
-    text-align: center;
-
+    background: white;
 }

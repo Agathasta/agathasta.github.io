@@ -1,11 +1,11 @@
 const container = document.querySelector("#container");
-const rows = document.querySelector("#rows");
 
-let paint = false;
+let brush = false;
 
 container.addEventListener("click", makeGrid);
 function makeGrid() {
-    paint = !paint;
+    brush = !brush;
+    const rows = document.querySelector("input[name=thickness]:checked");
     const numberOfRows = parseInt(rows.value);
     container.style.setProperty("--rows", numberOfRows);
     container.style.setProperty("--cols", numberOfRows);
@@ -16,7 +16,7 @@ function makeGrid() {
         cell.style.backgroundColor = "white";
 
         cell.addEventListener("mouseenter", () => {
-            if (paint) {
+            if (brush) {
                 if (cell.style.backgroundColor == "white") {
                     let r = Math.floor(Math.random() * 255);
                     let g = Math.floor(Math.random() * 255);
@@ -43,5 +43,9 @@ function makeGrid() {
 
 const btnReset = document.querySelector("#reset");
 btnReset.addEventListener("click", () => {
+    container.innerHTML = "";
+});
+const changePencil = document.querySelector("#pencil");
+changePencil.addEventListener("input", () => {
     container.innerHTML = "";
 });

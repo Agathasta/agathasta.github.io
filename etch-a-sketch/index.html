@@ -5,14 +5,29 @@
     <meta charset="UTF-8" />
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&family=Poppins&display=swap">
 </head>
 
 <body>
-    <label for="rows">Nr. of rows (min. 2, max. 100)</label>
-    <input id="rows" type="text">
-    <button id="reset">CLEAR CANVAS</button>
-    <p>Click on the canvas to get in and out drawing mode</p>
-    <div id="container"></div>
+    <main>
+        <h1>Etch-a-Sketch</h1>
+        <ul>
+            <li>Click on the canvas to get in and out drawing mode.</li>
+            <li>Go over a color to make it a shade darker.</li>
+            <li>To clear the canvas change the pencil or press "clear".</li>
+        </ul>
+        <form id="pencil">Pencil:
+            <input id="thin" name="thickness" value="80" type="radio">
+            <label for="thin">Thin</label>
+            <input id="medium" name="thickness" value="50" type="radio">
+            <label for="medium">Medium</label>
+            <input id="thick" name="thickness" value="20" type="radio">
+            <label for="thick">Thick</label>
+        </form>
+        <button id="reset">CLEAR CANVAS</button>
+        <div id="container"></div>
+    </main>
 
     <script src="script.js"></script>
 </body>
