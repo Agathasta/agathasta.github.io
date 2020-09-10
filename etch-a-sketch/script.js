@@ -16,9 +16,12 @@ function makeGrid() {
         cell.style.backgroundColor = "rgb(34, 36, 35)";
 
         cell.addEventListener("mouseenter", () => {
+            let chosenColor = document.querySelector("input[name=color]:checked").value;
             if (brush) {
-                if (cell.style.backgroundColor == "rgb(34, 36, 35)") {
-                    let chosenColor = document.querySelector("input[name=color]:checked").value;
+                if (chosenColor === "delete") {
+                    cell.style.backgroundColor = "rgb(34, 36, 35)";
+                }
+                else if (cell.style.backgroundColor == "rgb(34, 36, 35)") {
                     if (chosenColor === "white") {
                         cell.style.backgroundColor = "rgb(255, 255, 255)";
                     } else if (chosenColor === "colorful") {

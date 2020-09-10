@@ -11,27 +11,32 @@
 
 <body>
     <main>
-        <h1>Etch-a-Sketch</h1>
-        <ul>
-            <li>Click on the canvas to get in and out drawing mode.</li>
-            <li>Go over a color to make it a shade darker.</li>
-            <li>To clear the canvas change the pencil or press "clear".</li>
-        </ul>
-        <form id="color">Color:
-            <input id="white" name="color" value="white" type="radio">
-            <label for="white">White</label>
-            <input id="colorful" name="color" value="colorful" type="radio">
-            <label for="colorful">Colorful</label>
-        </form>
-        <form id="pencil">Pencil:
-            <input id="thin" name="thickness" value="80" type="radio">
-            <label for="thin">Thin</label>
-            <input id="medium" name="thickness" value="50" type="radio">
-            <label for="medium">Medium</label>
-            <input id="thick" name="thickness" value="20" type="radio">
-            <label for="thick">Thick</label>
-        </form>
-        <button id="reset">CLEAR CANVAS</button>
+        <div id="header">
+            <h1>Etch-a-Sketch</h1>
+            <ul>
+                <li>Click on the canvas to get in and out drawing mode.</li>
+                <li>Go over a color to make it a shade darker.</li>
+                <li>To clear the canvas change the pencil or press "clear".</li>
+            </ul>
+            <form id="color">Color:
+                <input id="white" name="color" value="white" type="radio">
+                <label for="white">White</label>
+                <input id="colorful" name="color" value="colorful" type="radio">
+                <label for="colorful">Colorful</label>
+                <input id="delete" name="color" value="delete" type="radio">
+                <label for="delete">Delete</label>
+            </form>
+            <form id="pencil">Pencil:
+                <input id="thin" name="thickness" value="80" type="radio">
+                <label for="thin">Thin</label>
+                <input id="medium" name="thickness" value="50" type="radio">
+                <label for="medium">Medium</label>
+                <input id="thick" name="thickness" value="20" type="radio">
+                <label for="thick">Thick</label>
+            </form>
+            <button id="reset">CLEAR CANVAS</button>
+
+        </div>
         <div id="container"></div>
     </main>
 
