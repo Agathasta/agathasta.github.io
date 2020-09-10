@@ -13,16 +13,21 @@ function makeGrid() {
     for (i = 0; i < (numberOfRows * numberOfRows); i++) {
         let cell = document.createElement("div");
         cell.classList.add("cell");
-        cell.style.backgroundColor = "white";
+        cell.style.backgroundColor = "rgb(34, 36, 35)";
 
         cell.addEventListener("mouseenter", () => {
             if (brush) {
-                if (cell.style.backgroundColor == "white") {
-                    let r = Math.floor(Math.random() * 255);
-                    let g = Math.floor(Math.random() * 255);
-                    let b = Math.floor(Math.random() * 255);
-                    let color = "rgb(" + r + "," + g + "," + b + ")";
-                    cell.style.backgroundColor = color;
+                if (cell.style.backgroundColor == "rgb(34, 36, 35)") {
+                    let chosenColor = document.querySelector("input[name=color]:checked").value;
+                    if (chosenColor === "white") {
+                        cell.style.backgroundColor = "rgb(255, 255, 255)";
+                    } else if (chosenColor === "colorful") {
+                        let r = Math.floor(Math.random() * 255);
+                        let g = Math.floor(Math.random() * 255);
+                        let b = Math.floor(Math.random() * 255);
+                        let color = "rgb(" + r + "," + g + "," + b + ")";
+                        cell.style.backgroundColor = color;
+                    }
                 }
                 else {
                     let color = cell.style.backgroundColor.substring(4, cell.style.backgroundColor.length - 1);
