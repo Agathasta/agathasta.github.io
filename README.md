@@ -16,4 +16,4 @@ I got curious, and in summer 2020 I started teaching myself how to code. A month
 
   - [Etch-a-Sketch](https://agathasta.github.io/etch-a-sketch)
   - [Rock, Paper, Scissors](https://agathasta.github.io/rock-paper-scissor)
-  - [Exercises with functions, loops and conditionals](https://agathasta.github.io/JS-practice)
+  - [Exercises with functions, loops and conditionals](https://agathasta.github.io/exercises-JS)
