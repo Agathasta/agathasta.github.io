@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS practice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grandstander&family=Open+Sans&display=swap">
+</head>
+
+<body>
+    <header>
+        <h1>Practicing Vanilla JS</h1>
+        <p>Exercises proposed by <a href="https://github.com/TheOdinProject/javascript-exercises"
+                alt="GitHub link to the exercises by the Odin Project">
+                The Odin Project</a></p>
+    </header>
+    <main class="main-content">
+        <!--CALCULATOR -->
+        <!--<div class="container" id="item-5">
+            <h2>Calculator</h2>
+            <p>Create a calculator that adds, subtracts, gets the sum, multiplies, gets the power,
+                and finds the factorial</p>
+            <div class="xx">
+                <input type="text" id="xx" class="input xx">
+                <p class="result" id="xx"></p>
+            </div>
+            <p class="small">Bonus: xx</p>
+        </div> -->
+        <!--TEMPERATURE CONVERSION -->
+        <div class="container" id="item-1">
+            <h2>Temperature conversion</h2>
+            <p>Write two functions that convert temperatures from Fahrenheit to Celsius,
+                and vice versa</p>
+            <div class="data">
+                <div id="fahrenheit">
+                    <input type="text" id="f" class="input number">
+                    <label for="f">F°</label>
+                    <span class="result" id="tempC"></span>
+                </div>
+                <div id="celsius">
+                    <input type="text" id="c" class="input number">
+                    <label for="c">C°</label>
+                    <span class="result" id="tempF"></span>
+                </div>
+            </div>
+            <p class="small">Bonus: works with negatives + rounds to 1 decimal</p>
+        </div>
+
+        <!--LEAP YEARS -->
+        <div class="container" id="item-2">
+            <h2>Leap years</h2>
+            <p>Create a function that determines whether or not a given year is a leap year.</p>
+            <div class="data">
+                <input type="text" id="year" class="input number">
+                <span class="result" id="leap-year"></span>
+            </div>
+        </div>
+
+        <!--SUM ALL -->
+        <div class="container" id="item-3">
+            <h2>Sum all</h2>
+            <p>Implement a function that takes 2 integers and returns the sum of every number
+                between(and including) them</p>
+            <div class="data">
+                <input type="text" id="sumA" class="input number">
+                <span>+</span>
+                <input type="text" id="sumB" class="input number">
+                <span class="result" id="sum"></span>
+            </div>
+            <p class="small">Bonus: works with larger number first + returns ERROR with negative numbers or non-number
+                parameters</p>
+        </div>
+
+        <!--REMOVE FROM ARRAY -->
+        <div class="container" id="item-4">
+            <h2>Remove from array</h2>
+            <p>Implement a function that takes an array and removes some arguments from it</p>
+            <div class="data">
+                <div id="array-container">
+                    <label for="array">Array arguments (separate with space)<br> [
+                        <input type="text" id="array" class="input array"> ]</label>
+                </div>
+                <div id="args-container">
+                    <label for="args">Arguments to take away from array (separate with space)<br> (
+                        <input type="text" id="args" class="input array"> )</label>
+                </div>
+                <p class="result" id="new-array"></p>
+            </div>
+            <p class="small">Bonus: works with strings, can remove all values, ignores non present values</p>
+        </div>
+
+        <!--REVERSE STRING -->
+        <div class="container" id="item-5">
+            <h2>Reverse string</h2>
+            <p>Write a function that returns its input, reversed</p>
+            <div class="data">
+                <input type="text" id="string" class="input string">
+                <p class="result" id="reverse"></p>
+            </div>
+            <p class="small">Bonus: reverses multiple words, works with numbers and punctuation,
+                works with blank strings</p>
+        </div>
+
+        <!--REPEAT STRING -->
+        <div class="container" id="item-6">
+            <h2>Repeat string</h2>
+            <p>Write a function that repeats the string a given number of times</p>
+            <div class="data">
+                <input type="text" id="string-repeat" class="input string">
+                <label for="number-repeats">repeat
+                    <input type="text" id="number-repeats" class="input number"> times</label>
+                <p class="result" id="repeated"></p>
+            </div>
+            <p class="small">Bonus: returns ERROR with negative numbers</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

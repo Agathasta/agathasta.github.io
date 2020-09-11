@@ -1,0 +1,1 @@
+This is a try to make a landing page showcasing practice algorythms from [The Odin Project](https://www.theodinproject.com/lessons/fundamentals-part-4)
