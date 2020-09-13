@@ -1,12 +1,16 @@
-/*let background = document.querySelector(".container");
-let data = document.querySelector(".data");
+// palindromes
+const posPalin = document.querySelector("#posPalin")
+posPalin.addEventListener("input", palindromes);
 
-data.onchange = changeBackground;
-function changeBackground() {
-    background.style.backgroundColor = "#" + Math.floor(Math.random() * 999);
-}*/
+function palindromes() {
+    const possiblePalindrome = posPalin.value;
+    const newStr = possiblePalindrome.toLowerCase().split("").filter((elem) => elem.match(/^[A-Za-z]+$/));
+    newStr == "" ? document.querySelector("#pali").textContent = ""
+        : newStr.join("") === newStr.reverse().join("") ? document.querySelector("#pali").textContent = "Yes, this is a palindrome!"
+            : document.querySelector("#pali").textContent = "No, this is not a palindrome";
+}
 
-/* tempConversion */
+// tempConversion
 /*  Fahrenheit to Celsius - ftoc: [°C] = ([°F] − 32) × ​5⁄9
     Celsius to Fahrenheit - ctof [°F] = [°C] × ​9⁄5 + 32 */
 
@@ -30,7 +34,7 @@ function ctof() {
     document.querySelector("#tempF").textContent = f + " F°";
 }
 
-/* leapYears */
+// leapYears
 /*  Leap years are divisible by four. 
     Leap years are NOT divisible by 100 unless they are divisible by 400.*/
 const resultYears = document.querySelector("#year");
@@ -47,7 +51,7 @@ function leapYears() {
     }
 }
 
-/* sumAll */
+// sumAll
 const resultSum = document.querySelector("#sumB");
 resultSum.addEventListener("input", sumAll)
 
@@ -65,7 +69,7 @@ function sumAll() {
     }
 }
 
-/* removeFromArray */
+// removeFromArray
 const resultArray = document.querySelector("#args");
 resultArray.addEventListener("input", removeFromArray);
 
@@ -92,7 +96,7 @@ function removeFromArray() {
     document.querySelector("#new-array").textContent = newArr;
 }
 
-/* reverseString */
+// reverseString
 
 const resultReverse = document.querySelector("#string");
 resultReverse.addEventListener("input", reverseString);
@@ -102,7 +106,7 @@ function reverseString() {
     document.querySelector("#reverse").textContent = str.split("").reverse().join("");
 }
 
-/* repeatString */
+// repeatString
 
 const resultRepeat = document.querySelector("#number-repeats");
 resultRepeat.addEventListener("input", repeatString);
