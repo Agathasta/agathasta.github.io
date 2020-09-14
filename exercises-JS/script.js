@@ -1,3 +1,46 @@
+// caesar cipher
+const shiftInput = document.querySelector("#shift")
+shiftInput.addEventListener("input", caesar);
+
+function caesar() {
+    const clearText = document.querySelector("#clearText").value
+    const shift = parseInt(shiftInput.value) % 26;
+
+    let asciiNum = [];
+    let newStr = [];
+
+    for (let i = 0; i < clearText.length; i++) {
+
+        if (clearText[i].match(/[A-Z]/)) {    // Uppercase: ASCII between 65 and 90
+            asciiNum = clearText.charCodeAt(i);
+            if (shift > 0 && (asciiNum + shift) > 90) {
+                asciiNum = 64 + (shift - (90 - asciiNum));
+            } else if (shift < 0 && (asciiNum + shift) < 65) {
+                asciiNum = (91 + shift) + (asciiNum - 65);
+            } else {
+                asciiNum += shift;
+            }
+            newStr.push(String.fromCharCode(asciiNum))
+
+        } else if (clearText[i].match(/[a-z]/)) {     // Lowercase: ASCII between 97 and 122
+            asciiNum = clearText.charCodeAt(i);
+            if (shift > 0 && (asciiNum + shift) > 122) {
+                asciiNum = 64 + (shift - (90 - asciiNum));
+            } else if (shift < 0 && (asciiNum + shift) < 97) {
+                asciiNum = (91 + shift) + (asciiNum - 65);
+            } else {
+                asciiNum += shift;
+            }
+            newStr.push(String.fromCharCode(asciiNum))
+
+        } else {    // not a character, keep as it is
+            asciiNum = clearText[i];
+            newStr.push(asciiNum);
+        }
+    }
+    document.querySelector("#cipher").textContent = newStr.join("");
+}
+
 // palindromes
 const posPalin = document.querySelector("#posPalin")
 posPalin.addEventListener("input", palindromes);
@@ -81,8 +124,6 @@ function removeFromArray() {
         if (arr.indexOf(args[i]) != -1) {
             pos = arr.indexOf(args[i]);
             newArr = arr.splice(pos, 1);
-            console.log("new array: " + arr);
-            console.log("new array: " + newArr);
         }
     }
     newArr = "["
