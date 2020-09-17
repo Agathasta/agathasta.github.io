@@ -113,7 +113,6 @@ h3 {
 
 .subtitle {
   display: flex;
-  flex-flow: row wrap;
 }
 
 #delay-1 {
@@ -179,15 +178,18 @@ h3 {
   top: 0;
   left: 0;
   text-align: center;
-  padding: 2em;
-  font-size: 200%;
-  line-height: 2em;
+  padding:  4em 2em;
+  font-size: 1.6em;
+  line-height: 1.7em;
   height: 100%;
   width: 100%;
   transition: opacity 0.4s linear;
 }
 .project-tile:hover .hover-tile {
   opacity: 1;
+}
+.smaller {
+  font-size: 75%;
 }
 
 .invisible {
@@ -243,6 +245,9 @@ footer {
   justify-content: space-between;
   padding: 2em;
   font-family: monospace;
+}
+#footer a {
+  color: black;
 }
 
 @media (max-width: 600px) {
