@@ -51,6 +51,7 @@ body {
 .del {
     background: rgba(68, 68, 68, 0.7);
     color: white;
+    font-weight: 300;
 }
 .del:hover {
     color: white;
