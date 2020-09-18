@@ -1,0 +1,81 @@
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+-->
+    <main id="main">
+        <h1 id="title">How did you like us?</h1>
+        <p id="description">If you take a minute to tell us how your day went, you will make ours :)</p>
+        <form id="survey-form">
+            <label for="name" id="name-label" class="label-style">Name</label>
+            <input id="name" class="input-style" type="text" placeholder="Enter your name" required>
+            <br>
+
+            <label for="email" id="email-label" class="label-style">Email</label>
+            <input id="email" class="input-style" type="email" placeholder="Enter your email" required>
+            <br>
+
+            <label for="number" id="number-label" class="label-style">How many people were in your group? <span
+                    class="notes">(leave empty if more than 25)</span></label>
+            <input id="number" class="input-style" type="number" placeholder="Enter a number between 1 and 25" min="1"
+                max="25">
+            <br>
+
+            <label for="dropdown" class="label-style">What tour did you make?</label>
+            <select id="dropdown" class="input-style" name="tours" required>
+                <option value="" disabled selected>Select your tour</option>
+                <option value="Munich Third Reich">Munich Third Reich</option>
+                <option value="Neuschwantein">Neuschwanstein</option>
+                <option value="Linderhof">Linderhof</option>
+                <option value="Herrenchiemsee">Herrenchiemsee</option>
+            </select>
+            <br>
+
+            <label for="recommendation" class="label-style">Would you recommend us?</label><br>
+            <input id="yes" type="radio" name="recommendation" value="yes">
+            <label for="yes" class="label-style">Yes</label>
+            <br>
+            <input id="maybe" type="radio" name="recommendation" value="maybe">
+            <label for="maybe" class="label-style">Maybe</label>
+            <br>
+            <input id="no" type="radio" name="recommendation" value="no">
+            <label for="no" class="label-style">No</label>
+            <br><br>
+
+            <label for="suggestions" class="label-style">What could we do better?</label><br>
+            <input id="slower" type="checkbox" name="suggestions" value="slower">
+            <label for="slower" class="label-style">Slower pace</label>
+            <br>
+            <input id="later" type="checkbox" name="suggestions" value="later">
+            <label for="later" class="label-style">Later start</label>
+            <br>
+            <input id="shorter" type="checkbox" name="suggestions" value="shorter">
+            <label for="shorter" class="label-style">Shorter tour</label>
+            <br>
+            <input id="guide" type="checkbox" name="suggestions" value="guide">
+            <label for="guide" class="label-style">Different guide</label>
+            <br><br>
+
+            <label for="textarea" class="label-style">What else do you want us to know?</label>
+            <textarea id="textarea" class="input-style" name="extras"
+                placeholder="you can be honest, go ahead!"></textarea>
+            <br><br>
+
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+<footer>
+    <div id="footer">
+        <p>freeCodeCamp | Responsive Web Design Project | Survey Form</p>
+        <p>©AGS</p>
+    </div>
+</footer>

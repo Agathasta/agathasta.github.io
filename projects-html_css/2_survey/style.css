@@ -1,0 +1,97 @@
+body{ 
+    background-image: linear-gradient( 0deg, rgba(74, 80, 74, 0.3), rgba(74, 80, 74, 0.3)), url("https://user-images.githubusercontent.com/69153207/93583156-c0ed8b00-f9a3-11ea-8092-f1c918d65d4b.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: large;
+    padding: 1em;
+}
+#title {
+    font-size: 3.5rem !important;
+    font-family: 'Anton', sans-serif;
+    margin-top: 2em;
+}
+#title, #description {
+    text-align: center;
+    line-height: 1em;
+    color: rgb(53, 36, 0);
+}
+#survey-form {
+    width: 50%;
+    background:rgba(250, 180, 28, 0.7);
+    margin: 50px auto;
+    border-radius: .3em;
+    padding: 2em;
+    color: rgb(39, 43, 39);
+    line-height: 2em;
+}
+.input-style {
+    display: block;
+    width: 100%;
+    height: 3em;
+    padding: .5em 1em;
+    border-radius: .3em;
+    border-width: 0px;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+.notes {
+    font-size: smaller;
+}
+#textarea {
+    height: 10em;
+    resize: vertical;
+    font-family: 'Montserrat', sans-serif;
+}
+#submit {
+    width: 100%;
+    height: 3em;
+    padding: .5em 1em;
+    border-radius: .3em;
+    background-color: rgb(39, 43, 39);
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    border-width: 0px;
+}
+footer{
+    background: rgba(167, 166, 166, 0.8);
+    margin: 0;
+}
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-family: monospace;
+    font-weight: 400;    
+}
+@media (max-width: 600px) {
+    body, #submit {
+        font-size: medium;
+    }
+    .input-style, .label-style {
+        font-size: small;
+    }
+    .input-style {
+        margin: .5em 0 0em 0;
+    }
+    #survey-form {
+        width: 80%;
+        line-height: 1.5em;
+    }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+    .input-style, .label-style {
+        font-size: medium;
+    }
+    .input-style {
+        margin: .5em 0 0em 0;
+    }
+    #survey-form {
+        width: 65%;
+        line-height: 1.8em;
+    }
+}
