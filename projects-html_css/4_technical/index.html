@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Technical Documentation Page</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    -->
+    <div id="sidebar">
+        <nav id="navbar">
+            <header id="header-sidebar"><strong>The Position property</strong></header>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#position:_static;">position: static;</a>
+            <a class="nav-link" href="#position:_relative;">position: relative;</a>
+            <a class="nav-link" href="#position:_absolute;">position: absolute;</a>
+            <a class="nav-link" href="#position:_fixed;">position: fixed;</a>
+            <a class="nav-link" href="#position:_sticky;">position: sticky;</a>
+        </nav>
+    </div>
+    <main id="main-doc">
+        <p id="banner">Courtesy of <a style="text-decoration: none; cursor: pointer; color: black;"
+                href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">w3schools</a></p>
+        <h1 class="anchor">The Position property</h1>
+        <section class="main-section" id="Introduction">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <p>The <span class="monospace">position</span> property specifies the type of positioning method used for an
+                element.</p>
+            <p>There are five different position values:</p>
+            <ul>
+                <li><span class="monospace">static</span></li>
+                <li><span class="monospace">relative</span></li>
+                <li><span class="monospace">fixed</span></li>
+                <li><span class="monospace">absolute</span></li>
+                <li><span class="monospace">sticky</span></li>
+            </ul>
+            <p>Elements are then positioned using the top, bottom, left, and right properties. However, these properties
+                will not work unless the <span class="monospace">position</span> property is set first. They also work
+                differently depending on the position value.</p>
+            <hr>
+        </section>
+        <section class="main-section" id="position:_static;">
+            <header>
+                <h2 class="anchor">position: static;</h2>
+            </header>
+            <p>HTML elements are positioned static by default.<br>
+                Static positioned elements are not affected by the top, bottom, left, and right properties.<br>
+                An element with <span class="monospace">position: static;</span> is not positioned in any special way;
+                it is always positioned according to the normal flow of the page:</p>
+            <div id="static">This < div> element has position: static;</div>
+            <p>Here is the CSS that is used:</p>
+            <div class="container">
+                <p>Example</p>
+                <code class="code">#static {<br>
+                    <span style="color: red">&emsp;&emsp;&emsp;position:</span> <span style="color:mediumblue;">static;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;width:</span> <span style="color:mediumblue;"> 90%;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;border:</span> <span style="color:mediumblue;">3px solid #73AD21;</span><br>
+                  }</code>
+            </div>
+            <hr>
+        </section>
+        <section class="main-section" id="position:_relative;">
+            <header>
+                <h2 class="anchor">position: relative;</h2>
+            </header>
+            <p>An element with <span class="monospace">position: relative;</span> is positioned relative to its normal
+                position.<br>
+                Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to
+                be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left
+                by the element.</p>
+            <div id="relative">This < div> element has position: relative;</div>
+            <p>Here is the CSS that is used:</p>
+            <div class="container">
+                <p>Example</p>
+                <code class="code">#relative {<br>
+                    <span style="color: red">&emsp;&emsp;&emsp;position:</span> <span style="color:mediumblue;">relative;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;left:</span> <span style="color:mediumblue;"> 30px;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;width:</span> <span style="color:mediumblue;"> 90%;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;border:</span> <span style="color:mediumblue;">3px solid #73AD21;</span><br>
+                  }</code>
+            </div>
+            <hr>
+        </section>
+        <section class="main-section" id="position:_absolute;">
+            <header>
+                <h2 class="anchor">position: absolute;</h2>
+            </header>
+            <p>An element with <span class="monospace">position: absolute;</span> is positioned relative to the nearest
+                positioned ancestor (instead of positioned relative to the viewport, like fixed).<br>
+                However; if an absolute positioned element has no positioned ancestors, it uses the document body, and
+                moves along with page scrolling.<br>
+                <strong>Note:</strong> A "positioned" element is one whose position is anything except <span
+                    class="monospace">static</span>.<br>
+                Here is a simple example:</p>
+            <div id="relative-2">
+                This < div> element has position: relative;
+                    <div id="absolute-2">
+                        This < div> element has position: absolute;
+                    </div>
+            </div>
+            <p>Here is the CSS that is used:</p>
+            <div class="container">
+                <p>Example</p>
+                <code class="code">#relative-2 {<br>
+                    <span style="color: red">&emsp;&emsp;&emsp;position:</span> <span style="color:mediumblue;">relative;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;width:</span> <span style="color:mediumblue;"> 400px;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;height:</span> <span style="color:mediumblue;"> 200px;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;border:</span> <span style="color:mediumblue;">3px solid #73AD21;</span><br>
+                }</code>
+                <code class="code">#absolute-2 {<br>
+                    <span style="color: red">&emsp;&emsp;&emsp;position:</span> <span style="color:mediumblue;">absolute;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;top:</span> <span style="color:mediumblue;"> 80px;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;right:</span> <span style="color:mediumblue;"> 0;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;width:</span> <span style="color:mediumblue;"> 200px;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;height:</span> <span style="color:mediumblue;"> 100px;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;border:</span> <span style="color:mediumblue;">3px solid #73AD21;</span><br>
+                }</code>
+            </div>
+            <hr>
+        </section>
+        <section class="main-section" id="position:_fixed;">
+            <header>
+                <h2 class="anchor">position: fixed;</h2>
+            </header>
+            <p>An element with <span class="monospace">position: fixed;</span> is positioned relative to the viewport,
+                which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and
+                left properties are used to position the element.<br>
+                A fixed element does not leave a gap in the page where it would normally have been located.<br>
+                Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:</p>
+            <div id="fixed">This < div> element has position: fixed;</div>
+            <div class="container">
+                <p>Example</p>
+                <code class="code">#fixed {<br>
+                    <span style="color: red">&emsp;&emsp;&emsp;position:</span> <span style="color:mediumblue;">fixed;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;bottom:</span> <span style="color:mediumblue;">60px;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;right:</span> <span style="color:mediumblue;">0;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;width:</span> <span style="color:mediumblue;"> 300px;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;background:</span> <span style="color:mediumblue;">#9ed451;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;border:</span> <span style="color:mediumblue;">2px solid #73AD21;</span><br>
+                }</code>
+            </div>
+            <hr>
+        </section>
+        <section class="main-section" id="position:_sticky;">
+            <header>
+                <h2 class="anchor">position: sticky;</h2>
+            </header>
+            <p>An element with <span class="monospace">position: sticky;</span> is positioned based on the user's scroll
+                position.<br>
+                A sticky element toggles between <span class="monospace">relative</span> and <span
+                    class="monospace">fixed</span>, depending on the scroll position. It is positioned relative until a
+                given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+            <iframe id="sticky" src="/Users/ana/Desktop/code-misc/4_technical/sticky.html"></iframe>
+            <p style="background:lightgoldenrodyellow; padding: .5em;"><strong>Note:</strong> Internet Explorer, Edge 15
+                and earlier versions do not support sticky positioning. Safari requires a -webkit- prefix (see example
+                below). You must also specify at least one of <span class="monospace">top</span>, <span
+                    class="monospace">right</span>, <span class="monospace">bottom</span> or <span
+                    class="monospace">left</span> for sticky positioning to work.</p>
+            <p>In this example, the sticky element sticks to the top of the page (<span class="monospace">top:
+                    0</span>), when you reach its scroll position.</p>
+            <div class="container">
+                <p>Example</p>
+                <code class="code">#sticky {<br>
+                    <span style="color: red">&emsp;&emsp;&emsp;position:</span> <span style="color:mediumblue;">-webkit-sticky;</span> /* Safari */;<br>
+                    <span style="color: red">&emsp;&emsp;&emsp;position:</span> <span style="color:mediumblue;">sticky;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;top:</span> <span style="color:mediumblue;">0;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;background:</span> <span style="color:mediumblue;">#9ed451;</span><br>
+                    <span style="color: red">&emsp;&emsp;&emsp;border:</span> <span style="color:mediumblue;">2px solid #73AD21;</span><br>
+                }</code>
+            </div>
+            <hr>
+        </section>
+    </main>
+</body>
+<footer>
+    <div id="footer">
+        <p>freeCodeCamp | Responsive Web Design Project | Technical Documentation Page</p>
+        <p>©AGS</p>
+    </div>
+</footer>
+
+</html>
