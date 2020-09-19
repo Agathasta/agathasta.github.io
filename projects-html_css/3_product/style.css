@@ -5,7 +5,8 @@
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    --blue: rgb(0, 113, 227)
+    --blue: rgb(0, 113, 227);
+    --light-grey: rgb(240, 240, 240);
 }
 a {
     text-decoration: none;
@@ -16,12 +17,18 @@ a:hover {
     text-decoration: underline;
 }
 
-#navbar {
+/* ---------NAVBARS--------- */
+
+#navbar-1 {
+    background: black;   
+}
+#flex-1 {
+    width: 980px;
+    padding: .75em 0;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;   
-    padding: .75em 9em;
 }
 .iconify {
     font-size: 130% !important;
@@ -33,11 +40,11 @@ a:hover {
 .navbar-link:hover {
     color: white;
 }
-#used {
+.used {
     color: rgb(171, 171, 171);
 }
 
-.navbar-2 {
+#navbar-2 {
     text-align: center;
     font-size: .75em;
     padding: .8em;
@@ -61,19 +68,12 @@ a:hover {
     80% {top: -3px; background: var(--blue); color: azure}
     100% {background: rgb(248, 248, 248); color: rgb(63, 63, 63);}
 }
-/* BODY */
+
+/* ---------BODY--------- */
 
 main {
     font-size: 1.1em;
-}
-
-#grid-1 {
-    padding: 5em 9em 7em 9em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-row-gap: 8em;
-    align-items: center;
+    background: var(--light-grey);
 }
 .grid-img {
     object-fit: cover;
@@ -81,22 +81,31 @@ main {
     max-height: 100%;
 }
 .text {
-    line-height: 2.5em;
+    line-height: 1.5em;
 }
-.even {
-    padding-left: 4em;
-}
-.model, .subtitle {
-    font-size: 1.5em;
-    font-weight: 500;
-}
-h2{
-    font-size: 2.6em;
+h2 {
+    font-size: 2.8em;
     font-weight: 500;
     line-height: 1.1em;
 }
-.red {
-    color: rgb(204, 32, 32);
+h3 {
+    font-size: 1.8em;
+    line-height: 1.1em;
+    padding-top: 1em;
+}
+h4 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    padding-top: 1em;
+}
+.para {
+    margin: 2vh 0;
+}
+.bold {
+    font-weight: 500 ;
+}
+.center {
+    text-align: center;
 }
 .buy {
     padding: .4em 1em;
@@ -110,16 +119,54 @@ h2{
     filter: brightness(110%);
 }
 
+/* --------SECTION 1-------- */
+
+#section-1 {
+    background: white;
+}
+
+#content-1 {
+    width: 980px;
+    margin: 0 auto;
+    padding: 5em 0 7em 0;
+}
+#grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 8em;
+    align-items: center;
+}
+.even {
+    padding-left: 4em;
+}
+.model, .subtitle {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.red {
+    color: rgb(204, 32, 32);
+}
+
+/* ----------SECTION 2---------- */
+
+#section-2 {
+    background: white;
+}
+#content-2 {
+    width: 940px;
+    margin: 0 auto;
+    padding: 1.5em 0 6em 0;
+}
 .header {
     text-align: center;
-    line-height: 4em;
+    line-height: 4.5em;
 }
 .header a {
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 1.3em;
 }
 #grid-2 {
-    padding: 1.5em 10em 6em 10em;
+    margin-top: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 2.2em;
@@ -130,15 +177,46 @@ h2{
     font-size: 78%;
     line-height: 1.5em;
 }
-.bold {
-    font-weight: 500 ;
+
+/* --------SECTION 3--------- */
+
+.flex-2 {
+    border: 2em solid var(--light-grey);
+    padding: 4.5em 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    text-align: center;
 }
-.para {
-    margin: 1.2em 0;
+.flex-2 img {
+    max-width: 50%;
 }
-h3{
-    font-size: 1.8em;
-    font-weight: 500;
-    line-height: 1.1em;
-    padding-top: 1em;
+.flex-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 1em; /* padding on parent & margin on child = separation between children amomg them and between children and parent */
+    background: var(--light-grey);
+    text-align: center;
+    margin-bottom: 2em;
 }
+.flex-4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em; /* padding on parent & margin on child = separation between children amomg them and between children and parent */
+    justify-content: flex-end;
+    overflow: hidden;
+    background: white;
+    padding: 4em 3em 0 3em;
+}
+.flex-4 img {
+    width: 100%;
+    height: auto;
+    margin-top: 3em;
+}
+/* ---------SECTION-4-------- */
+ .narrow {
+    width: 400px;
+    margin: 2vh auto;
+ }
