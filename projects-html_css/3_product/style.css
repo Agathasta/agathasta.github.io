@@ -268,8 +268,7 @@ h4 {
 }
 .disclaimer {
     font-size: .7em;
-    color: grey;
-    width: 980px;
+    width: 80vw;
     margin: 0 auto;
     padding: 4em 0 1em 0;
 }
@@ -282,11 +281,22 @@ ol {
 footer {
     background: var(--light-grey);
 }
-.internal-links {
+.footer {
     font-size: .7em;
-    color: rgb(66, 66, 66);
-    width: 980px;
+    color: grey;
+    width: 80vw;
     margin: 0 auto;
     padding-bottom: 2em;
+}
+.underline {
+    border-bottom: 1px solid grey;
+}
+.flex-7 {
+    display: grid;
+    justify-content: space-between;
+}
+.flex-8 {
+    display: flex;
+    justify-content: flex-start;
 }
 
