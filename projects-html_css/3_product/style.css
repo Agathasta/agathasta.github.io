@@ -263,40 +263,40 @@ h4 {
     text-align: center;
 }
 /* -------FOOTER--------- */
-.bgd-discl {
-    background: rgb(238, 237, 237)
-}
-.disclaimer {
-    font-size: .7em;
-    width: 80vw;
-    margin: 0 auto;
-    padding: 4em 0 1em 0;
-}
-.disclaimer a {
-    color: rgb(48, 47, 47);
-}
-ol {
-    padding-left: 1em;
-}
+
 footer {
     background: var(--light-grey);
 }
 .footer {
     font-size: .7em;
-    color: grey;
+    color: rgb(137, 137, 137);
     width: 80vw;
     margin: 0 auto;
-    padding-bottom: 2em;
+    padding: 2em 0;
 }
 .underline {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    padding: .8em 0;
 }
-.flex-7 {
+.grid-4 {
     display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     justify-content: space-between;
+    padding: .8em 0;
 }
-.flex-8 {
+.middle {
     display: flex;
-    justify-content: flex-start;
+}
+.middle a {
+    padding: 0 1em;
+    border-right:1px solid rgb(180, 180, 180);
+    color: rgb(61, 61, 61);
+}
+.end {
+    border: none;
+}
+.last {
+    text-align: right;
+    color: rgb(61, 61, 61);
 }
 
