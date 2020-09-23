@@ -14,7 +14,7 @@
     <!-- -------NAVBARS------- -->
     <header>
         <nav id="navbar-1">
-            <div id="flex-1">
+            <div id="navbar-flex-1">
                 <a href="#" class="iconify navbar-link" data-icon="ion-logo-apple" data-inline="false"></a>
                 <a href="#" class="navbar-link">Mac</a>
                 <a href="#" class="navbar-link">iPad</a>
@@ -34,9 +34,9 @@
 
     <main>
         <!-- ---------SECTION 1--------- -->
-        <section id="section-1">
-            <div id="content-1">
-                <div id="grid-1">
+        <section id="presentation">
+            <div id="content-presentation">
+                <div id="grid-presentation">
                     <div class="text">
                         <p class="red para">New</p>
                         <p class="model para">iPhone SE</p>
@@ -70,119 +70,128 @@
             </div>
         </section>
         <!-- ---------SECTION 2--------- -->
-        <section id="section-2">
-            <div id="content-2">
+        <section id="comparison">
+            <div id="content-comparison">
                 <div class="header">
                     <h2 class="anchor" id="compare">Which iPhone is right for you?</h2>
                     <p style="color: var(--blue); font-weight: 300;"><a href="#">Compare all iPhone
                             models</a>&emsp;&#62;
                     </p>
                 </div>
-                <div id=grid-2>
-                    <img class="grid-img"
-                        src="https://user-images.githubusercontent.com/69153207/93662176-711fca00-fa5e-11ea-9c46-0bc73828acc3.jpg"
-                        alt="iPhone 11 Pro picture">
-                    <img class="grid-img"
-                        src="https://user-images.githubusercontent.com/69153207/93662177-73822400-fa5e-11ea-9ef6-4db950e66f50.jpg"
-                        alt="iPhone 11 picture">
-                    <img class="grid-img"
-                        src="https://user-images.githubusercontent.com/69153207/93662179-741aba80-fa5e-11ea-840c-0ec11c661c43.jpg"
-                        alt="iPhone SE picture">
-                    <img class="grid-img"
-                        src="https://user-images.githubusercontent.com/69153207/93662770-d5dd2380-fa62-11ea-8254-c96993f52ab6.jpg"
-                        alt="iPhone XR picture">
-
-                    <div class="small">
-                        <h3 class="bold">iPhone 11 Pro</h3>
-                        <p class="bold">Starting at $999</p>
-                        <p class="para">Triple-camera system <br>(Ultra Wide, Wide, Telephoto)</p>
-                        <p class="para">Up to 20 hours of <br>video playback<sup class="small">1</sup></p>
-                        <p class="para">Water resistant to a depth of <br>4 meters for up to 30 minutes<sup
-                                class="small">2</sup></p>
-                        <p>5.8” or 6.5” Super Retina XDR display<sup class="small">3</sup></p>
+                <div id="grid-comparison">
+                    <div class="flex-comparison-column">
+                        <img class="grid-img"
+                            src="https://user-images.githubusercontent.com/69153207/93662176-711fca00-fa5e-11ea-9c46-0bc73828acc3.jpg"
+                            alt="iPhone 11 Pro picture">
+                        <div class="small">
+                            <h3 class="bold">iPhone 11 Pro</h3>
+                            <p class="bold">Starting at $999</p>
+                            <p class="para">Triple-camera system <br>(Ultra Wide, Wide, Telephoto)</p>
+                            <p class="para">Up to 20 hours of <br>video playback<sup class="small">1</sup></p>
+                            <p class="para">Water resistant to a depth of <br>4 meters for up to 30 minutes<sup
+                                    class="small">2</sup></p>
+                            <p class="para">5.8” or 6.5” Super Retina XDR display<sup class="small">3</sup></p>
+                        </div>
+                        <div class="small flex-buy">
+                            <button class="buy">Buy</button><br>
+                            <p class="para" style="color: var(--blue); font-weight: 300;"><a href="#">Learn
+                                    more</a>&emsp;&#62;
+                            </p>
+                        </div>
                     </div>
-                    <div class="small">
-                        <h3 class="bold">iPhone 11</h3>
-                        <p class="bold">Starting at $699</p>
-                        <p class="para">Dual-camera system <br>(Ultra Wide, Wide)</p>
-                        <p class="para">Up to 17 hours of <br>video playback<sup class="small">1</sup></p>
-                        <p class="para">Water resistant to a depth of <br>2 meters for up to 30 minutes<sup
-                                class="small">2</sup></p>
-                        <p>6.1” Liquid Retina HD display<sup class="small">3</sup></p>
+                    <div class="flex-comparison-column">
+                        <img class="grid-img"
+                            src="https://user-images.githubusercontent.com/69153207/93662177-73822400-fa5e-11ea-9ef6-4db950e66f50.jpg"
+                            alt="iPhone 11 picture">
+                        <div class="small">
+                            <h3 class="bold">iPhone 11</h3>
+                            <p class="bold">Starting at $699</p>
+                            <p class="para">Dual-camera system <br>(Ultra Wide, Wide)</p>
+                            <p class="para">Up to 17 hours of <br>video playback<sup class="small">1</sup></p>
+                            <p class="para">Water resistant to a depth of <br>2 meters for up to 30 minutes<sup
+                                    class="small">2</sup></p>
+                            <p class="para">6.1” Liquid Retina HD display<sup class="small">3</sup></p>
+                        </div>
+                        <div class="small flex-buy">
+                            <button class="buy">Buy</button><br>
+                            <p class="para" style="color: var(--blue); font-weight: 300;"><a href="#">Learn
+                                    more</a>&emsp;&#62;
+                            </p>
+                        </div>
                     </div>
-                    <div class="small">
-                        <h3 class="bold">iPhone SE</h3>
-                        <p class="bold">Starting at $399</p>
-                        <p class="para">Single-camera system <br>(Wide)</p>
-                        <p class="para">Up to 13 hours of <br>video playback<sup class="small">1</sup></p>
-                        <p class="para">Water resistant to a depth of <br>1 meter for up to 30 minutes<sup
-                                class="small">2</sup>
-                        </p>
-                        <p>4.7” Retina HD display<sup class="small">3</sup></p>
+                    <div class="flex-comparison-column">
+                        <img class="grid-img"
+                            src="https://user-images.githubusercontent.com/69153207/93662179-741aba80-fa5e-11ea-840c-0ec11c661c43.jpg"
+                            alt="iPhone SE picture">
+                        <div class="small">
+                            <h3 class="bold">iPhone SE</h3>
+                            <p class="bold">Starting at $399</p>
+                            <p class="para">Single-camera system <br>(Wide)</p>
+                            <p class="para">Up to 13 hours of <br>video playback<sup class="small">1</sup></p>
+                            <p class="para">Water resistant to a depth of <br>1 meter for up to 30 minutes<sup
+                                    class="small">2</sup>
+                            </p>
+                            <p class="para">4.7” Retina HD display<sup class="small">3</sup></p>
+                        </div>
+                        <div class="small flex-buy">
+                            <button class="buy">Buy</button><br>
+                            <p class="para" style="color: var(--blue); font-weight: 300;"><a href="#">Learn
+                                    more</a>&emsp;&#62;
+                            </p>
+                        </div>
                     </div>
-                    <div class="small">
-                        <h3 class="bold">iPhone XR</h3>
-                        <p class="bold">Starting at $599</p>
-                        <p class="para">Single-camera system <br>(Wide)</p>
-                        <p class="para">Up to 16 hours of <br>video playback<sup class="small">1</sup></p>
-                        <p class="para">Water resistant to a depth of <br>1 meter for up to 30 minutes<sup
-                                class="small">2</sup>
-                        </p>
-                        <p>6.1” Liquid Retina HD display<sup class="small">3</sup></p>
-                    </div>
-                    <div class="small">
-                        <button class="buy">Buy</button><br>
-                        <p class="para" style="color: var(--blue); font-weight: 300;"><a href="#">Learn
-                                more</a>&emsp;&#62;
-                        </p>
-                    </div>
-                    <div class="small">
-                        <button class="buy">Buy</button><br>
-                        <p class="para" style="color: var(--blue); font-weight: 300;"><a href="#">Learn
-                                more</a>&emsp;&#62;
-                        </p>
-                    </div>
-                    <div class="small">
-                        <button class="buy">Buy</button><br>
-                        <p class="para" style="color: var(--blue); font-weight: 300;"><a href="#">Learn
-                                more</a>&emsp;&#62;
-                        </p>
-                    </div>
-                    <div class="small">
-                        <button class="buy">Buy</button><br>
-                        <p class="para" style="color: var(--blue); font-weight: 300;"><a href="#">Learn
-                                more</a>&emsp;&#62;
-                        </p>
+                    <div class="flex-comparison-column">
+                        <img class="grid-img"
+                            src="https://user-images.githubusercontent.com/69153207/93662770-d5dd2380-fa62-11ea-8254-c96993f52ab6.jpg"
+                            alt="iPhone XR picture">
+                        <div class="small">
+                            <h3 class="bold">iPhone XR</h3>
+                            <p class="bold">Starting at $599</p>
+                            <p class="para">Single-camera system <br>(Wide)</p>
+                            <p class="para">Up to 16 hours of <br>video playback<sup class="small">1</sup></p>
+                            <p class="para">Water resistant to a depth of <br>1 meter for up to 30 minutes<sup
+                                    class="small">2</sup>
+                            </p>
+                            <p class="para">6.1” Liquid Retina HD display<sup class="small">3</sup></p>
+                        </div>
+                        <div class="small flex-buy">
+                            <button class="buy">Buy</button><br>
+                            <p class="para" style="color: var(--blue); font-weight: 300;"><a href="#">Learn
+                                    more</a>&emsp;&#62;
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ---------SECTION 3--------- -->
-        <section id="section-3">
-            <div class="flex-2 anchor" id="applecard">
+        <section>
+            <div class="flex-card-1 anchor" id="applecard">
                 <img class="grid-img"
                     src="https://user-images.githubusercontent.com/69153207/93666800-46933880-fa81-11ea-8fb8-126128b37e00.png"
                     alt="colorful computers">
                 <div class="text">
                     <h2>Apple Card<br>Monthly Installments</h2>
-                    <p class="para">Pay for your new iPhone over 24 months,<br> interest‑free with Apple Card.</p>
+                    <p class="text para">Pay for your new iPhone over 24 months,<br> interest‑free with Apple Card.</p>
                     <p style="color: var(--blue); font-weight: 300;"><a href="#">Learn more</a>&emsp;&#62;</p>
                 </div>
             </div>
-            <div class="flex-3">
-                <div class="flex-4">
+            <div class="flex-card-2-row">
+                <div class="flex-card-2-column">
                     <h2>Get up to $450 toward a new iPhone.</h2>
-                    <p class="para">With Apple Trade In, you can get credit toward a new iPhone when you trade in an
-                        eligible smartphone.<sup class="small">4</sup> It’s good for you and the planet.</p>
+                    <p class="text para">With Apple Trade In, you can get credit toward a new iPhone when you trade in
+                        an
+                        eligible smartphone.<sup>4</sup> It’s good for you and the planet.</p>
                     <p style="color: var(--blue); font-weight: 300;"><a href="#">Learn more</a>&emsp;&#62;</p>
                     <img class="grid-img"
                         src="https://user-images.githubusercontent.com/69153207/93670571-99c6b480-fa9c-11ea-94ee-a2a6edfe43c5.jpg"
                         alt="pink iPhone">
                 </div>
-                <div class="flex-4">
+                <div class="flex-card-2-column">
                     <h2>The easiest way to upgrade to the latest iPhone.</h2>
-                    <p class="para">Join the iPhone Upgrade Program to get the latest iPhone every year, low monthly
-                        payments, and AppleCare+.<sup class="small">5</sup></p>
+                    <p class="text para">Join the iPhone Upgrade Program to get the latest iPhone every year, low
+                        monthly
+                        payments, and AppleCare+.<sup>5</sup></p>
                     <p style="color: var(--blue); font-weight: 300;"><a href="#">Learn more</a>&emsp;&#62;</p>
                     <img class="grid-img"
                         src="https://user-images.githubusercontent.com/69153207/93670572-9af7e180-fa9c-11ea-9258-916221d15f9f.jpg"
@@ -192,7 +201,7 @@
         </section>
 
         <!-- --------SECTION 4--------- -->
-        <section id="section-4">
+        <section id="shop">
             <div class="center">
                 <h4 class="bold">Why Apple is the best place to buy.</h4>
                 <p class="para text narrow">Have questions about carriers, payments, or anything else iPhone? Just say
@@ -202,44 +211,44 @@
         </section>
 
         <!-- --------SECTION 5--------- -->
-        <section id="section-5">
+        <section>
             <h2 class="anchor center" id="accesories">Featured Accessories</h2>
-            <div class="flex-5">
-                <div class="text">
-                    <h2>Make them yours.</h2>
-                    <p class="para">Personalize your AirPods with<br> free engraving. Only at Apple.</p>
-                    <p style="color: var(--blue); font-weight: 300;"><a href="#">Learn more</a>&emsp;&#62;
-                        <a href="#">Buy</a>&emsp;&#62;</p>
+            <div id="content-accesories">
+                <div class="flex-accesories">
+                    <div class="text">
+                        <h2>Make them yours.</h2>
+                        <p class="para">Personalize your AirPods with<br> free engraving. Only at Apple.</p>
+                        <p style="color: var(--blue); font-weight: 300;"><a href="#">Learn more</a>&emsp;&#62;
+                            <a href="#">Buy</a>&emsp;&#62;</p>
+                    </div>
+                    <img class="grid-img"
+                        src="https://user-images.githubusercontent.com/69153207/93687891-d78a0400-fac1-11ea-9e15-e864b495893b.png"
+                        alt="AirPods picture">
                 </div>
-                <img class="grid-img"
-                    src="https://user-images.githubusercontent.com/69153207/93687891-d78a0400-fac1-11ea-9e15-e864b495893b.png"
-                    alt="AirPods picture">
-            </div>
-            <div id="content-5">
-                <div class="grid-3">
-                    <img class="grid-img grid-item-3"
+                <div class="grid-accesories">
+                    <img class="grid-img grid-item-accesories"
                         src="https://user-images.githubusercontent.com/69153207/93688362-8b40c300-fac5-11ea-8067-3a764cb8ffce.jpg"
                         alt="iPhone 11 Pro red case">
-                    <img class="grid-img grid-item-3"
+                    <img class="grid-img grid-item-accesories"
                         src="https://user-images.githubusercontent.com/69153207/93688290-0c4b8a80-fac5-11ea-9acb-bca807473fe5.jpg"
                         alt="iPhone SE black case">
-                    <img class="grid-img grid-item-3"
+                    <img class="grid-img grid-item-accesories"
                         src="https://user-images.githubusercontent.com/69153207/93688292-0ce42100-fac5-11ea-9330-e37b2abaafba.jpg"
                         alt="AirPods Pro">
-                    <div class="grid-item-3b"></div>
-                    <div class="grid-item-3b">
+                    <div class="grid-item-accesories-b"></div>
+                    <div class="grid-item-accesories-b">
                         <p class="small red">New</p>
                     </div>
-                    <div class="grid-item-3b"></div>
-                    <div class="grid-item-3">
+                    <div class="grid-item-accesories-b"></div>
+                    <div class="grid-item-accesories">
                         <p style="color: var(--blue); font-weight: 300;"><a href="#">iPhone 11 Pro <br>Leather
                                 Case</a>&emsp;&#62;</p>
                     </div>
-                    <div class="grid-item-3">
+                    <div class="grid-item-accesories">
                         <p style="color: var(--blue); font-weight: 300;"><a href="#">iPhone SE <br>(2nd generation)
                                 <br>Silicone Case</a>&emsp;&#62;</p>
                     </div>
-                    <div class="grid-item-3">
+                    <div class="grid-item-accesories">
                         <p style="color: var(--blue); font-weight: 300;"><a href="#">AirPods Pro</a>&emsp;&#62;</p>
                     </div>
                 </div>
@@ -252,7 +261,7 @@
             <p class="underline">More ways to shop: Find an <a href="#">Apple Store</a></a> or <a href="#">other
                     retailer</a> near you. Or call 1-800-MY-APPLE.</p>
 
-            <div class="grid-4">
+            <div class="grid-footer">
                 <p class="first">Copyright © 2020 Apple Inc. All rights reserved</p>
                 <div class="middle">
                     <a href="#">Privacy Policy</a>

@@ -27,8 +27,10 @@ a:hover {
     background: black;   
     position: fixed;
     width: 100vw;
+    height: 3em;
+    z-index: 1;
 }
-#flex-1 {
+#navbar-flex-1 {
     width: 980px;
     padding: .75em 0;
     margin: 0 auto;
@@ -57,21 +59,20 @@ a:hover {
     background: rgb(248, 248, 248);
     color: rgb(63, 63, 63);
     position: relative;
-    top: -3px;
+    top: 4em;
     animation-name: fall;
     animation-duration: 5s; 
     animation-timing-function: linear;
-    z-index: -1;
 }
-.navbar-2 a {
+#navbar-2 a {
     animation-name: fall;
     animation-duration: 5s; 
     animation-timing-function: linear;
 }
 @keyframes fall {
     0% {top: -100px; background: var(--blue); color: azure}
-    50% {top: -3px; background: var(--blue); color: azure}
-    80% {top: -3px; background: var(--blue); color: azure}
+    50% {top: 4em; background: var(--blue); color: azure}
+    80% {top: 4em; background: var(--blue); color: azure}
     100% {background: rgb(248, 248, 248); color: rgb(63, 63, 63);}
 }
 
@@ -90,17 +91,17 @@ main {
     line-height: 1.5em;
 }
 h2 {
-    font-size: 2.8em;
+    font-size: 2.6em;
     font-weight: 500;
     line-height: 1.1em;
 }
 h3 {
-    font-size: 1.8em;
+    font-size: 1.7em;
     line-height: 1.1em;
     padding-top: 1em;
 }
 h4 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.2em;
     padding-top: 1em;
 }
@@ -113,6 +114,12 @@ h4 {
 }
 .center {
     text-align: center;
+}
+sup {
+    position: relative;
+    font-size: 0.6em;
+    vertical-align: baseline;
+    top: -0.5em;
 }
 .buy {
     padding: .4em 1em;
@@ -128,16 +135,16 @@ h4 {
 
 /* --------SECTION 1-------- */
 
-#section-1 {
+#presentation {
     background: white;
 }
 
-#content-1 {
+#content-presentation {
     width: 980px;
     margin: 0 auto;
     padding: 5em 0 3em 0;
 }
-#grid-1 {
+#grid-presentation {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -157,12 +164,13 @@ h4 {
 
 /* ----------SECTION 2---------- */
 
-#section-2 {
+#comparison {
     background: white;
 }
-#content-2 {
+#content-comparison {
     width: 940px;
     margin: 0 auto;
+    padding-bottom: 6em;
 }
 .header {
     text-align: center;
@@ -171,51 +179,62 @@ h4 {
 .header a {
     font-size: 1.3em;
 }
-#grid-2 {
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 2.2em;
-    grid-row-gap: 1em;
-    align-items: left;
-}
 .small {
     font-size: 78%;
     line-height: 1.5em;
 }
+#grid-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 2em;
+    margin: 1em auto;
+}
+#grid-comparison img {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.flex-comparison-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-buy {
+    margin-top: auto;
+    margin-bottom: 2em;
+}
 
 /* --------SECTION 3--------- */
 
-.flex-2 {
-    border: 2em solid var(--light-grey);
+.flex-card-1 {
     padding: 4.5em 1em;
+    margin: 2em;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: white;
     text-align: center;
 }
-.flex-2 img {
+.flex-card-1 img {
     max-width: 50%;
 }
-.flex-3 {
+.flex-card-2-row {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    padding: 0 1em; /* padding on parent & margin on child = separation between children amomg them and between children and parent */
+    padding: 0 1em; /* padding on parent + margin on child = separation between children amomg them and between children and parent */
     text-align: center;
     margin-bottom: 2em;
 }
-.flex-4 {
+.flex-card-2-column {
     display: flex;
     flex-direction: column;
-    margin: 0 1em; /* padding on parent & margin on child = separation between children amomg them and between children and parent */
+    margin: 0 1em; /* padding on parent + margin on child = separation between children amomg them and between children and parent */
     justify-content: flex-end;
     overflow: hidden;
     background: white;
     padding: 4em 3em 0 3em;
 }
-.flex-4 img {
+.flex-card-2-column img {
     width: 100%;
     height: auto;
     margin-top: 3em;
@@ -225,18 +244,18 @@ h4 {
     width: 400px;
     margin: 2vh auto;
  }
- #section-4 {
-    margin-bottom: 5em;
+ #shop {
+    margin-bottom: 4em;
  }
 
  /* ----------SECTION-5--------- */
- #content-5 {
+ #content-accesories {
     width: 1020px;
     margin: 0 auto;
 }
-.flex-5 {
-    width: 1020px;
-    margin: 3em auto .7em auto;
+.flex-accesories {
+    margin-top: 3em;
+    margin-bottom: .7em;
     padding: 7em 2.5em;
     display: flex;
     justify-content: space-around;
@@ -244,25 +263,25 @@ h4 {
     background: white;
     text-align: center;
 }
-.flex-5 img {
+.flex-accesories img {
     max-width: 40%;
 }
-.grid-3 {
+.grid-accesories {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: .7em;
     justify-content: stretch;
 }
-.grid-3 img {
+.grid-accesories img {
     padding: 4em;
 }
-.grid-item-3 {
+.grid-item-accesories {
     background: white;
     padding-bottom: 4em;
     text-align: center;
     line-height: 1.5em;
 }
-.grid-item-3b {
+.grid-item-accesories-b {
     background: white;
     padding-bottom: 1em;
     text-align: center;
@@ -283,7 +302,7 @@ footer {
     border-bottom: 1px solid rgb(180, 180, 180);
     padding: .8em 0;
 }
-.grid-4 {
+.grid-footer {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: space-between;
@@ -304,4 +323,36 @@ footer {
     text-align: right;
     color: rgb(61, 61, 61);
 }
-
+/* total screen width desktop = aprox. 1270px */
+@media (max-width: 730px) {
+    * {
+        font-size: 90%;
+    }
+}
+@media (min-width: 730px) and (max-width: 1070px) {
+    * {
+        font-size: 99%;
+    }
+    #content-presentation {
+        width: 700px;
+    }
+    #content-comparison {
+        width: 580px;
+    }
+    #grid-comparison {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10em;
+    }
+    .flex-card-1, .flex-accesories {
+        margin: 2em 8em;
+        font-size: 90%;
+    }
+    .flex-card-2-row {
+        margin: 2em 6em;
+        font-size: 90%;
+    }
+    .grid-accesories {
+        margin: -1.3em 8em;
+        font-size: 90%;
+    }
+}
