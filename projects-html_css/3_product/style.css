@@ -91,7 +91,7 @@ main {
     line-height: 1.5em;
 }
 h2 {
-    font-size: 2.6em;
+    font-size: 2.5em;
     font-weight: 500;
     line-height: 1.1em;
 }
@@ -147,7 +147,6 @@ sup {
 #grid-presentation {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
     grid-row-gap: 8em;
     align-items: center;
 }
@@ -206,7 +205,7 @@ sup {
 /* --------SECTION 3--------- */
 
 .flex-card-1 {
-    padding: 4.5em 1em;
+    padding: 4.5em 1.5em;
     margin: 2em;
     display: flex;
     justify-content: space-around;
@@ -217,10 +216,11 @@ sup {
 .flex-card-1 img {
     max-width: 50%;
 }
+.flex-card-1 .text {
+    padding: 0 1em;
+}
 .flex-card-2-row {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
     padding: 0 1em; /* padding on parent + margin on child = separation between children amomg them and between children and parent */
     text-align: center;
     margin-bottom: 2em;
@@ -249,13 +249,9 @@ sup {
  }
 
  /* ----------SECTION-5--------- */
- #content-accesories {
-    width: 1020px;
-    margin: 0 auto;
-}
+
 .flex-accesories {
-    margin-top: 3em;
-    margin-bottom: .7em;
+    margin: 3em 8em .7em 8em;
     padding: 7em 2.5em;
     display: flex;
     justify-content: space-around;
@@ -267,6 +263,7 @@ sup {
     max-width: 40%;
 }
 .grid-accesories {
+    margin: 0 8em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: .7em;
@@ -286,6 +283,39 @@ sup {
     padding-bottom: 1em;
     text-align: center;
 }
+/* ---------SECTION 6-------- */
+#extras {
+    margin: 2em auto 0 auto;
+}
+.extras {
+    font-size: 90% !important;
+}
+.flex-bgd-img  {
+    color: white;
+    display: flex;
+    padding: 2em 1em; /* to get space between both */
+    height: 700px;
+}
+.flex-bgd-img a {
+    color: white;
+}
+.bgd-img {
+    width: 50%;
+    padding: 2em;
+    text-align: center;
+    margin: 1em; /* to get space between both */
+}
+#bgd-img-pink {
+    background-image: url("https://user-images.githubusercontent.com/69153207/94028993-a577eb00-fdbc-11ea-9bb1-8bbdb8cdc66e.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#bgd-img-blue {
+    background-image: url("https://user-images.githubusercontent.com/69153207/94029007-a7da4500-fdbc-11ea-93c2-df04f3b7609a.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 /* -------FOOTER--------- */
 
 footer {
@@ -294,7 +324,7 @@ footer {
 .footer {
     font-size: .7em;
     color: rgb(137, 137, 137);
-    width: 80vw;
+    width: 940px;
     margin: 0 auto;
     padding: 2em 0;
 }
@@ -324,11 +354,6 @@ footer {
     color: rgb(61, 61, 61);
 }
 /* total screen width desktop = aprox. 1270px */
-@media (max-width: 730px) {
-    * {
-        font-size: 90%;
-    }
-}
 @media (min-width: 730px) and (max-width: 1070px) {
     * {
         font-size: 99%;
@@ -345,14 +370,78 @@ footer {
     }
     .flex-card-1, .flex-accesories {
         margin: 2em 8em;
-        font-size: 90%;
+        font-size: 85%;
     }
     .flex-card-2-row {
         margin: 2em 6em;
-        font-size: 90%;
+        font-size: 85%;
     }
     .grid-accesories {
         margin: -1.3em 8em;
+        font-size: 85%;
+    }
+    .flex-bgd-img {
+        margin: 0 6em;
+        font-size: 85%;
+        height: 450px;
+    }
+}
+@media (max-width: 730px) {
+    * {
+        font-size: 97%;
+    }
+    h2 {
+        font-size: 2.2em;
+    }
+    .even {
+        padding-left: 0;
+    }
+    #content-presentation {
+        width: 360px;
+        text-align: center;
+    }
+    #grid-presentation {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2em;
+    }
+    .last-img {
+        order: 4;
+    }
+    #content-comparison {
+        width: 480px;
+    }
+    #grid-comparison {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6em;
+    }
+    .small {
         font-size: 90%;
+    }
+    .flex-card-1, .flex-card-2-row, .flex-accesories {
+        background: white;
+        width: 100vw;
+        margin: 1em 0;
+        padding: 3em 0;
+        flex-direction: column;    
+    }
+    .flex-card-2-column {
+        width: 400px;
+        margin: 2em auto;
+        padding: 1em 0;
+    }
+    .grid-accesories {
+        max-width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .flex-bgd-img  {
+        flex-direction: column;
+        padding: 0; 
+    }
+    .bgd-img {
+        width: 100vw;
+        height: 100%;
+        padding: 2em;
+        margin: 1em 0; 
     }
 }
