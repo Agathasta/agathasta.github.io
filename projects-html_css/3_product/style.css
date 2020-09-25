@@ -90,7 +90,7 @@ main {
     font-size: 1.1em;
 }
 .para {
-    margin: .5em 0;
+    margin: .6em 0;
 }
 h2 {
     font-size: 2.8em;
@@ -358,7 +358,7 @@ footer {
     color: rgb(61, 61, 61);
 }
 /* total screen width desktop = aprox. 1270px */
-@media (min-width: 730px) and (max-width: 1070px) {
+@media (min-width: 740px) and (max-width: 1060px) {
     * {
         font-size: 99%;
     }
@@ -382,7 +382,7 @@ footer {
         column-gap: 8em;
     }
     #content-card, #content-accesories, #extras {
-        width: 780px;
+        width: 740px;
         margin: 0 auto;
     }
     .flex-card-1, .flex-accesories, .grid-accesories {
