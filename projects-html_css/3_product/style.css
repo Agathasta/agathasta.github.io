@@ -90,8 +90,11 @@ main {
 .text {
     line-height: 1.5em;
 }
+.para {
+    margin: 2vh 0;
+}
 h2 {
-    font-size: 2.5em;
+    font-size: 2.7em;
     font-weight: 500;
     line-height: 1.1em;
 }
@@ -104,9 +107,6 @@ h4 {
     font-size: 1.4em;
     line-height: 1.2em;
     padding-top: 1em;
-}
-.para {
-    margin: 2vh 0;
 }
 .bold {
     font-weight: 500 ;
@@ -179,7 +179,7 @@ sup {
     font-size: 1.3em;
 }
 .small {
-    font-size: 78%;
+    font-size: .8em;
     line-height: 1.5em;
 }
 #grid-comparison {
@@ -187,7 +187,7 @@ sup {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     column-gap: 2em;
-    margin: 1em auto;
+    margin: 0 auto;
 }
 #grid-comparison img {
     margin-bottom: 2em;
@@ -207,11 +207,11 @@ sup {
 .flex-card-1 {
     padding: 4.5em 1.5em;
     margin: 2em;
+    background: white;
+    text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: white;
-    text-align: center;
 }
 .flex-card-1 img {
     max-width: 50%;
@@ -220,23 +220,20 @@ sup {
     padding: 0 1em;
 }
 .flex-card-2-row {
-    display: flex;
-    padding: 0 1em; /* padding on parent + margin on child = separation between children amomg them and between children and parent */
     text-align: center;
     margin-bottom: 2em;
+    display: flex;
+    padding: 0 1em; /* padding on parent + margin on child = separation between children amomg them and between children and parent */
 }
 .flex-card-2-column {
+    background: white;
+    padding: 4em 3em 0 3em;
     display: flex;
     flex-direction: column;
     margin: 0 1em; /* padding on parent + margin on child = separation between children amomg them and between children and parent */
     justify-content: flex-end;
-    overflow: hidden;
-    background: white;
-    padding: 4em 3em 0 3em;
 }
 .flex-card-2-column img {
-    width: 100%;
-    height: auto;
     margin-top: 3em;
 }
 /* ---------SECTION-4-------- */
@@ -250,8 +247,13 @@ sup {
 
  /* ----------SECTION-5--------- */
 
+ #content-accesories {
+    width: 1020px;
+    margin: 0 auto;
+}
+
 .flex-accesories {
-    margin: 3em 8em .7em 8em;
+    margin: 3em 0 .7em 0;
     padding: 7em 2.5em;
     display: flex;
     justify-content: space-around;
@@ -263,7 +265,6 @@ sup {
     max-width: 40%;
 }
 .grid-accesories {
-    margin: 0 8em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: .7em;
