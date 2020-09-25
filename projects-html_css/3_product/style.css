@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     --blue: rgb(0, 113, 227);
     --light-grey: rgb(240, 240, 240);
@@ -27,7 +27,7 @@ a:hover {
     background: black;   
     position: fixed;
     width: 100vw;
-    height: 3em;
+    height: 2.8rem;
     z-index: 1;
 }
 #navbar-icons {
@@ -43,7 +43,7 @@ a:hover {
 }
 .navbar-link {
     color: rgb(216, 216, 216);
-    font-size: .85em;
+    font-size: .8em;
 }
 .navbar-link:hover {
     color: white;
@@ -54,12 +54,12 @@ a:hover {
 
 #navbar-2 {
     text-align: center;
-    font-size: .75em;
+    font-size: .7em;
     padding: .8em;
     background: rgb(248, 248, 248);
     color: rgb(63, 63, 63);
     position: relative;
-    top: 4em;
+    top: 2.8rem;
     animation-name: fall;
     animation-duration: 5s; 
     animation-timing-function: linear;
@@ -71,32 +71,31 @@ a:hover {
 }
 @keyframes fall {
     0% {top: -100px; background: var(--blue); color: azure}
-    50% {top: 4em; background: var(--blue); color: azure}
-    80% {top: 4em; background: var(--blue); color: azure}
+    50% {top: 2.8rem; background: var(--blue); color: azure}
+    80% {top: 2.8rem; background: var(--blue); color: azure}
     100% {background: rgb(248, 248, 248); color: rgb(63, 63, 63);}
 }
 
 /* ---------BODY--------- */
 
 main {
-    font-size: 1.1em;
+    font-size: 1em;
     background: var(--light-grey);
-}
-.grid-img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
 }
 .text {
     line-height: 1.5em;
 }
+.big-text {
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
 .para {
-    margin: 2vh 0;
+    margin: .5em 0;
 }
 h2 {
-    font-size: 2.7em;
+    font-size: 2.8em;
     font-weight: 500;
-    line-height: 1.1em;
+    line-height: 1.2em;
 }
 h3 {
     font-size: 1.7em;
@@ -115,22 +114,24 @@ h4 {
 .center {
     text-align: center;
 }
+.model, .subtitle {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.red {
+    color: rgb(204, 32, 32);
+}
 sup {
     position: relative;
     font-size: 0.6em;
     vertical-align: baseline;
     top: -0.5em;
 }
-.buy {
-    padding: .4em 1em;
-    background: var(--blue);
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-}
-.buy:hover {
-    filter: brightness(110%);
+
+.grid-img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 
 /* --------SECTION 1-------- */
@@ -153,12 +154,17 @@ sup {
 .even {
     padding-left: 4em;
 }
-.model, .subtitle {
-    font-size: 1.5em;
-    font-weight: 500;
+.buy {
+    padding: .4em 1em;
+    margin-top: 1.5em;
+    background: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
 }
-.red {
-    color: rgb(204, 32, 32);
+.buy:hover {
+    filter: brightness(110%);
 }
 
 /* ----------SECTION 2---------- */
@@ -227,11 +233,11 @@ sup {
 }
 .flex-card-2-column {
     background: white;
-    padding: 4em 3em 0 3em;
+    padding: 4.5em 6em 0 6em;
     display: flex;
     flex-direction: column;
     margin: 0 1em; /* padding on parent + margin on child = separation between children amomg them and between children and parent */
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .flex-card-2-column img {
     margin-top: 3em;
@@ -248,7 +254,7 @@ sup {
  /* ----------SECTION-5--------- */
 
  #content-accesories {
-    width: 1020px;
+    width: 1080px;
     margin: 0 auto;
 }
 
@@ -325,7 +331,7 @@ footer {
 .footer {
     font-size: .7em;
     color: rgb(137, 137, 137);
-    width: 940px;
+    width: 1080px;
     margin: 0 auto;
     padding: 2em 0;
 }
