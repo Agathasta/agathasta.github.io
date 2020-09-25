@@ -11,6 +11,7 @@ I got curious, and in summer 2020 I started teaching myself how to code. A month
   - [A business landing page](https://codepen.io/agathasta/full/poybeyN) // this is a rough copy of my WordPress Business Page
   - [A technical documentation page](https://codepen.io/agathasta/full/jOqrRWW)
   - [A personal portfolio](https://codepen.io/agathasta/full/ExKZNOd)
+  - [A product landing page](https://agathasta.github.io/projects-html_css/3_product) // this is a shortened copy (with minor variations) of the iPhone landing page, freely chosen to practice flexbox and grids.
 
 - JAVASCRIPT
 
