@@ -30,7 +30,7 @@ a:hover {
     height: 3em;
     z-index: 1;
 }
-#navbar-flex-1 {
+#navbar-icons {
     width: 980px;
     padding: .75em 0;
     margin: 0 auto;
@@ -358,6 +358,9 @@ footer {
     * {
         font-size: 99%;
     }
+    #navbar-icons {
+        width: 90%;
+    }
     #content-presentation {
         width: 700px;
     }
@@ -392,6 +395,12 @@ footer {
     }
     h2 {
         font-size: 2.2em;
+    }
+    #navbar-icons {
+        width: 80%;
+    }
+    .disappear {
+        display: none;
     }
     .even {
         padding-left: 0;
