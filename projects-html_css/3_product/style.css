@@ -114,7 +114,7 @@ h4 {
 .center {
     text-align: center;
 }
-.model, .subtitle {
+.subtitle {
     font-size: 1.5em;
     font-weight: 500;
 }
@@ -257,7 +257,6 @@ sup {
     width: 1080px;
     margin: 0 auto;
 }
-
 .flex-accesories {
     margin: 3em 1em .7em 1em;
     padding: 7em 2.5em;
@@ -274,23 +273,23 @@ sup {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: .7em;
-    justify-content: stretch;
     margin: 1em;
 }
 .grid-accesories img {
     padding: 4em;
 }
-.grid-item-accesories {
+.flex-accesories-column {
+    display: flex;
+    flex-direction: column;
     background: white;
     padding-bottom: 4em;
     text-align: center;
     line-height: 1.5em;
 }
-.grid-item-accesories-b {
-    background: white;
-    padding-bottom: 1em;
-    text-align: center;
+.flex-bottom {
+    margin-bottom: auto;
 }
+
 /* ---------SECTION 6-------- */
 
 
@@ -428,10 +427,10 @@ footer {
 }
 @media (max-width: 730px) {
     * {
-        font-size: 97%;
+        font-size: 98%;
     }
     h2 {
-        font-size: 2.2em;
+        font-size: 2.1em;
     }
     #navbar-icons {
         width: 80%;
@@ -442,11 +441,11 @@ footer {
     .even {
         padding-left: 0;
     }
-    #content-presentation {
-        width: 360px;
+    #content-presentation, #content-accesories {
+        width: 100vw;
         text-align: center;
     }
-    #grid-presentation {
+    #grid-presentation, .grid-accesories {
         grid-template-columns: 1fr;
         grid-row-gap: 2em;
     }
@@ -454,32 +453,49 @@ footer {
         order: 4;
     }
     #content-comparison {
-        width: 480px;
+        width: 300px;
     }
     #grid-comparison {
         grid-template-columns: 1fr 1fr;
-        column-gap: 6em;
+        column-gap: 3em;
+    }
+    .flex-comparison-column {
+        max-width: 50vw;
     }
     .small {
-        font-size: 90%;
+        font-size: 86%;
     }
-    .flex-card-1, .flex-card-2-row, .flex-accesories {
-        background: white;
+    .flex-card-1, .flex-card-2-row, .flex-accesories, .grid-accesories {
         width: 100vw;
-        margin: 1em 0;
-        padding: 3em 0;
-        flex-direction: column;    
+        flex-direction: column;   
+        margin: 2em 0; 
+        padding: 1em 0;
+        font-size: 95%;
+    }
+    .flex-accesories img, .flex-card-1 img {
+        min-width: 90%;
+        padding: 2em 0;
+    }
+    .flex-card-2-column, .flex-accesories-column {
+        width: 100vw;
+        margin: 0;
+        margin-bottom: 2em;
+        font-size: 95%;
     }
     .flex-card-2-column {
-        width: 400px;
-        margin: 2em auto;
-        padding: 1em 0;
+        padding: 2em 2em 0 2em;
     }
-    .grid-accesories {
-        max-width: 100vw;
-        padding: 0;
-        margin: 0;
+    .flex-accesories-column {
+        padding-bottom: 2em;
     }
+    .flex-accesories-column a {
+        font-size: 1.4em;
+    }
+    #shop, .narrow {
+        width: 90vw;
+        margin: 1em auto;
+    }
+
     .flex-bgd-img  {
         flex-direction: column;
         padding: 0; 
@@ -489,5 +505,37 @@ footer {
         height: 100%;
         padding: 2em;
         margin: 1em 0; 
+    }
+    .footer {
+        width: 90vw;
+    }
+    .grid-footer {
+        padding-top: 0;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "underline"
+            "last"
+            "first"
+            "middle";
+        }
+    .start {
+        padding-left: 0 !important;
+    }
+    .underline {
+        border: none;
+        grid-area: underline;
+        padding: 0;
+    }
+    .first {
+        grid-area: first;
+    }
+    .middle {
+        display: inline;
+        grid-area: middle;
+    }
+    .last {
+        grid-area: last;
+        text-align: left;
     }
 }
