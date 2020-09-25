@@ -211,7 +211,7 @@ sup {
 /* --------SECTION 3--------- */
 
 .flex-card-1 {
-    padding: 4.5em 1.5em;
+    padding: 4.5em 2em;
     margin: 2em;
     background: white;
     text-align: center;
@@ -259,7 +259,7 @@ sup {
 }
 
 .flex-accesories {
-    margin: 3em 0 .7em 0;
+    margin: 3em 1em .7em 1em;
     padding: 7em 2.5em;
     display: flex;
     justify-content: space-around;
@@ -275,6 +275,7 @@ sup {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: .7em;
     justify-content: stretch;
+    margin: 1em;
 }
 .grid-accesories img {
     padding: 4em;
@@ -291,17 +292,14 @@ sup {
     text-align: center;
 }
 /* ---------SECTION 6-------- */
-#extras {
-    margin: 2em auto 0 auto;
-}
-.extras {
-    font-size: 90% !important;
-}
+
+
 .flex-bgd-img  {
-    color: white;
-    display: flex;
-    padding: 2em 1em; /* to get space between both */
     height: 700px;
+    color: white;
+    text-align: center;
+    display: flex;
+    padding: 2em 1em; /* to get space to border */
 }
 .flex-bgd-img a {
     color: white;
@@ -309,7 +307,6 @@ sup {
 .bgd-img {
     width: 50%;
     padding: 2em;
-    text-align: center;
     margin: 1em; /* to get space between both */
 }
 #bgd-img-pink {
@@ -331,7 +328,7 @@ footer {
 .footer {
     font-size: .7em;
     color: rgb(137, 137, 137);
-    width: 1080px;
+    width: 1040px;
     margin: 0 auto;
     padding: 2em 0;
 }
@@ -350,11 +347,11 @@ footer {
 }
 .middle a {
     padding: 0 1em;
-    border-right:1px solid rgb(180, 180, 180);
+    border-right: 1px solid rgb(180, 180, 180);
     color: rgb(61, 61, 61);
 }
 .end {
-    border: none;
+    border: none !important;
 }
 .last {
     text-align: right;
@@ -365,35 +362,68 @@ footer {
     * {
         font-size: 99%;
     }
+    h2 {
+        font-size: 2.5em;
+    }
+    .small {
+        font-size: .85em;
+    }
     #navbar-icons {
         width: 90%;
     }
     #content-presentation {
-        width: 700px;
+        width: 680px;
     }
     #content-comparison {
-        width: 580px;
+        width: 520px;
     }
     #grid-comparison {
         grid-template-columns: 1fr 1fr;
-        column-gap: 10em;
+        column-gap: 8em;
     }
-    .flex-card-1, .flex-accesories {
-        margin: 2em 8em;
+    #content-card, #content-accesories, #extras {
+        width: 780px;
+        margin: 0 auto;
+    }
+    .flex-card-1, .flex-accesories, .grid-accesories {
         font-size: 85%;
     }
-    .flex-card-2-row {
-        margin: 2em 6em;
-        font-size: 85%;
-    }
-    .grid-accesories {
-        margin: -1.3em 8em;
+    .flex-card-2-column {
+        padding: 3em 2em 0 2em;
+        width: 50%;
         font-size: 85%;
     }
     .flex-bgd-img {
-        margin: 0 6em;
-        font-size: 85%;
         height: 450px;
+        padding: 0;
+    }
+    .footer {
+        width: 90vw;
+    }
+    .grid-footer {
+        padding-top: 0;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+            "underline underline"
+            "first last"
+            "middle middle";
+    }
+    .start {
+        padding-left: 0 !important;
+    }
+    .underline {
+        grid-area: underline;
+    }
+    .first {
+        grid-area: first;
+    }
+    .middle {
+        grid-area: middle;
+        padding: 0;
+    }
+    .last {
+        grid-area: last;
     }
 }
 @media (max-width: 730px) {
