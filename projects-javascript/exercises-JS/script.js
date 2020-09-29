@@ -157,9 +157,7 @@ function repeatString() {
     let number = parseInt(resultRepeat.value);
     let newString = "";
     if (number > 0) {
-        for (let i = 1; i <= number; i++) {
-            newString += string;
-        }
+        newString = string.repeat(number);
         document.querySelector("#repeated").textContent = newString;
     } else {
         document.querySelector("#repeated").textContent = "ERROR";
