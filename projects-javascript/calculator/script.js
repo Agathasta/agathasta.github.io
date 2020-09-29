@@ -1,6 +1,7 @@
 const numbers = document.querySelectorAll(".number");
 const operators = document.querySelectorAll(".operator");
-const display = document.querySelector("#display")
+const displayNum = document.querySelector("#display-num");
+const displayOp = document.querySelector("#display-op");
 let number; // stores number
 let operator; // stores the operator
 let result;
@@ -12,17 +13,17 @@ for (i = 0; i < numbers.length; i++) {
 }
 function displayNumbers(n) {
     if (clearDisplay) {
-        display.textContent = "";
+        displayNum.textContent = "";
     }
-    display.textContent += n.target.value;
+    displayNum.textContent += n.target.value;
     clearDisplay = false;
 }
 
 // display operators
 for (i = 0; i < operators.length; i++) {
-    operators[i].addEventListener("click", storeOperator)
+    operators[i].addEventListener("click", storeOperator);
 }
 function storeOperator(o) {
     clearDisplay = true;
-    display.textContent = o.target.value;
+    displayOp.textContent = o.target.value;
 }
