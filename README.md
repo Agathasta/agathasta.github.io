@@ -15,7 +15,7 @@ I got curious, and in summer 2020 I started teaching myself how to code. A month
 
 - JAVASCRIPT
 
-  - [Calculator] (https://agathasta.github.io/calculator)
+  - [Calculator](https://agathasta.github.io/calculator)
   - [Etch-a-Sketch](https://agathasta.github.io/etch-a-sketch)
   - [Rock, Paper, Scissors](https://agathasta.github.io/rock-paper-scissor)
   - [Solving algorithms](https://agathasta.github.io/exercises-JS)
