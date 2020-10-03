@@ -1,0 +1,2 @@
+A simple calculator.
+[Final project for the Javascript Basics](https://www.theodinproject.com/courses/web-development-101/lessons/calculator) course by the [The Odin Project](https://www.theodinproject.com)
