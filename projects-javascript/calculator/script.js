@@ -1,6 +1,6 @@
 const numbers = document.querySelectorAll(".number");
 const operators = document.querySelectorAll(".operator");
-const del = document.querySelectorAll(".del");
+const ac = document.querySelector("#ac");
 
 const displayNum = document.querySelector("#display-num");
 const displayOp = document.querySelector("#display-op");
@@ -14,11 +14,18 @@ let opLock = true;
 numbers.forEach(number => number.addEventListener("click", n => {
 
     if (!numLock) {
+        // new number
         if (clearDisplay) {
             num1 = displayNum.textContent;
             displayNum.textContent = "";
         }
-        displayNum.textContent += n.target.value;
+        // display number unless it's 2nd float point
+        if (n.target.id === "float" && displayNum.textContent.includes(".")) {
+            displayNum.textContent = displayNum.textContent
+        } else {
+            displayNum.textContent += n.target.value;
+        }
+        // delete one digit or change sign
         if (!clearDisplay && n.target.id === "del") {
             displayNum.textContent = displayNum.textContent.substring(0, displayNum.textContent.length - 1);
             displayNum.textContent === "" ? opLock = true : opLock = false;
@@ -71,7 +78,7 @@ function operate(num1, num2, operator) {
     displayNum.textContent = +result.toFixed(3);
 }
 
-del.forEach(btn => btn.addEventListener("click", clear))
+ac.addEventListener("click", clear)
 
 function clear(d) {
     if (d.target.id === "ac") {
