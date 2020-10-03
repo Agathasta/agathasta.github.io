@@ -1,60 +1,85 @@
 const numbers = document.querySelectorAll(".number");
 const operators = document.querySelectorAll(".operator");
+const del = document.querySelectorAll(".del");
+
 const displayNum = document.querySelector("#display-num");
 const displayOp = document.querySelector("#display-op");
-let num1; // stores number 1
-let operator; // stores the operator
-let result; // stores the result
+let num1, operator, result;
 let calculateResult = false; // check if an operation should be performed
 let clearDisplay = false // check if display needs to be cleared
-let numLock = true;
-let opLock = false;
+let numLock = false;
+let opLock = true;
 
 // display numbers
-for (i = 0; i < numbers.length; i++) {
-    numbers[i].addEventListener("click", displayNumbers)
-}
-function displayNumbers(n) {
-    if (numLock) {
+numbers.forEach(number => number.addEventListener("click", n => {
+
+    if (!numLock) {
         if (clearDisplay) {
             num1 = displayNum.textContent;
             displayNum.textContent = "";
         }
         displayNum.textContent += n.target.value;
+        if (!clearDisplay && n.target.id === "del") {
+            displayNum.textContent = displayNum.textContent.substring(0, displayNum.textContent.length - 1);
+            displayNum.textContent === "" ? opLock = true : opLock = false;
+        } else if (!clearDisplay && n.target.id === "+/-") {
+            displayNum.textContent *= -1;
+        }
         clearDisplay = false;
-        opLock = true;
+        opLock = false;
     }
-}
+}))
 
 // display operators
-for (i = 0; i < operators.length; i++) {
-    operators[i].addEventListener("click", storeOperator);
-}
+operators.forEach(operator => operator.addEventListener("click", storeOperator))
+
 function storeOperator(o) {
-    if (opLock) {
+    if (!opLock) {
         displayOp.textContent = o.target.value;
-        opLock = false;
+        opLock = true;
+        numLock = false;
         if (calculateResult) {
             operate(num1, displayNum.textContent, operator);
         }
         operator = displayOp.textContent;
         calculateResult = true;
         clearDisplay = true;
-        operator === "=" ? numLock = false : numLock = true;
-
+        if (operator === "=") {
+            numLock = true;
+            opLock = false;
+        }
     }
 }
 
 function operate(num1, num2, operator) {
     if (operator === "+") {
-        result = Number(num1) + Number(num2);
+        result = +num1 + +num2;
     } else if (operator === "-") {
-        result = Number(num1) - Number(num2);
+        result = +num1 - +num2;
     } else if (operator === "*") {
-        result = Number(num1) * Number(num2);
+        result = +num1 * +num2;
     } else if (operator === "/") {
-        displayNum.textContent == 0 ? result = "b" + "a" + +"a" + "a" : result = Number(num1) / Number(num2);
+        if (+num2 === 0) {
+            displayNum.textContent = "b" + "a" + +"a" + "a";
+            numLock = true;
+            opLock = true;
+            return;
+        } else {
+            result = +num1 / +num2;
+        }
     }
-    displayNum.textContent = result;
-    opLock = true;
+    displayNum.textContent = +result.toFixed(3);
+}
+
+del.forEach(btn => btn.addEventListener("click", clear))
+
+function clear(d) {
+    if (d.target.id === "ac") {
+        numLock = false;
+        opLock = true;
+        clearDisplay = true;
+        calculateResult = false;
+        displayNum.textContent = "";
+        displayOp.textContent = "";
+    }
 }
