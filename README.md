@@ -1,6 +1,6 @@
 # [Agathasta's Portfolio](https://agathasta.github.io/)
 
-In spring 2020, I completely updated my WordPress Business Webpage, design and content: [smooth-tours.com](https://smooth-tours.com)
+In spring 2020, with time in my hands, I decided to try and give my WordPress Business Webpage a complete overhaul, both in design and content: [smooth-tours.com](https://smooth-tours.com). It was my first contact ever with code.
 
 I got curious, and in summer 2020 I started teaching myself how to code. A month later, I managed to start getting some structure, and I settled mostly on two open source free resources: [freeCodeCamp.org](https://www.freecodecamp.org/) and [The Odin Project](https://www.theodinproject.com). With sporadic jumps to and tons of help from to [MDN web docs](https://developer.mozilla.org) and [w3schools](https://www.w3schools.com/). A HUGE THANKS UPFRONT, THEY AND THEIR COMMUNITIES ARE BEING AMAZING!
 
