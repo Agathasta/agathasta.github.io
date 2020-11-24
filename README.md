@@ -2,7 +2,7 @@
 
 In spring 2020, with time in my hands, I decided to try and give my WordPress Business Webpage a complete overhaul, both in design and content: [smooth-tours.com](https://smooth-tours.com). It was my first contact ever with code.
 
-I got curious, and in summer 2020 I started teaching myself how to code. A month later, I managed to start getting some structure, and I settled mostly on two open source free resources: [freeCodeCamp.org](https://www.freecodecamp.org/) and [The Odin Project](https://www.theodinproject.com) (as well as other Vikings later on). With sporadic jumps to and tons of help from to [MDN web docs](https://developer.mozilla.org) and [w3schools](https://www.w3schools.com/). A HUGE THANKS UPFRONT, THEY AND THEIR COMMUNITIES ARE BEING AMAZING!
+I got curious, and in summer 2020 I started teaching myself how to code. A month later, I managed to start getting some structure, and I settled mostly on two open source free resources: [freeCodeCamp.org](https://www.freecodecamp.org/) and [The Odin Project](https://www.theodinproject.com). With sporadic jumps to and tons of help from [MDN web docs](https://developer.mozilla.org) and [w3schools](https://www.w3schools.com/). A huge thanks upfront, they and their communities are amazing!
 
 - HTML & CSS (August / September 2020)
 
@@ -28,4 +28,5 @@ In fall I went back-end. Ruby is being a different dimension, I'm quite struggli
   - [Tower of Hanoi](https://github.com/Agathasta/tower_of_hanoi)
   - [Tic-Tac_Toe](https://github.com/Agathasta/tic-tac-toe)
   - [Dictionary](https://github.com/Agathasta/dictionary)
+
 Besides that, I am following the Ruby Track at [Exercism](https://exercism.io/profiles/Agathasta) and doing daily algorithms at [Edabit](https://edabit.com/user/HfKYDK7gugtCaupsL)
