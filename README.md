@@ -21,12 +21,15 @@ I got curious, and in summer 2020 I started teaching myself how to code. A month
   - [Solving algorithms](https://agathasta.github.io/projects-javascript/exercises-JS)
 
 
-In fall I went back-end. Ruby is being a different dimension, I'm quite struggling with the abstraction. I notice I'm developing a quite interesting stubborn streak. The web is being again an incredible help. Jesus Castello's [RubyGuides](https://www.rubyguides.com/) jumps to my mind, but there is a ton of others. Again, the folks at [The Odin Project](https://www.theodinproject.com) and all the other Vigings around are utterly amazing!
+After dipping a toe with JS, in fall I went back-end. Ruby is being a different dimension, I'm quite struggling with the abstraction. I notice I'm developing a quite interesting stubborn streak. The web is being again an incredible help. StackOverflow and Jesus Castello's [RubyGuides](https://www.rubyguides.com/) jump to my mind, but there is a ton of others. Again, the folks at [The Odin Project](https://www.theodinproject.com) and all the other Vikings around are utterly amazing!
 
-- RUBY (October / November 2020)
+- RUBY (October / November / December 2020)
 
   - [Tower of Hanoi](https://github.com/Agathasta/tower_of_hanoi)
   - [Tic-Tac_Toe](https://github.com/Agathasta/tic-tac-toe)
+  - [Mastermind](https://github.com/Agathasta/mastermind)
   - [Dictionary](https://github.com/Agathasta/dictionary)
+  - [Hangman](https://github.com/Agathasta/hangman)
+  
 
 Besides that, I am following the Ruby Track at [Exercism](https://exercism.io/profiles/Agathasta) and doing daily algorithms at [Edabit](https://edabit.com/user/HfKYDK7gugtCaupsL)
