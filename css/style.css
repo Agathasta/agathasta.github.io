@@ -22,7 +22,7 @@ a {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 h2 {
   font-size: 1.7em;
@@ -158,12 +158,23 @@ h3 {
   min-height: 100vh;
 }
 
+.intro {
+  margin: 4rem 4rem 0rem 4rem;
+  line-height: 2em;
+}
+.link-intro {
+  color: var(--green)
+}
+.link-intro:hover {
+  color: var(--white)
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4em;
   max-width: 100%;
-  margin: 4rem;
+  margin: 3rem 4rem;
 }
 .project-tile {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
